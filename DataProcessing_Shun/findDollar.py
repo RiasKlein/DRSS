@@ -3,6 +3,7 @@
 # findDollar.py																   #
 # 																			   #																		   #
 #	Written by: Shunman Tse										Spring 2016	   #
+#																			   #
 ################################################################################
 
 # findDollar (filename)
@@ -25,7 +26,7 @@ def findDollar ( filename ):
 		line = rfile.readline()		# read in a line from the donor report
 		if not line: break			# make sure that we are not at the EOF
 		line.rstrip ('\n')			# remove newline characters in the line that was read in
-		if '$' in line and "AND ABOVE" in line:				
+		if '$' in line:				
 			wfile.write(line)		# if so, write the line into the output file
 		
 	# Close the files
