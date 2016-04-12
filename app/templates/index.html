@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% if nonprofits %}
+	{% for org in nonprofits %}
+		<a href="{{ url_for('index', nonprofit=org[0]) }}"> {{ org[0] }}</a>
+		<br>
+	{% endfor %}
+{% else %}
+	{% if nonprofit %}
+		{{ nonprofit }}
+		{% for record in records %}
+		{{ record|safe }}
+		{% endfor %}
+	{% endif %}
+{% endif %}
+
+{% endblock %}
