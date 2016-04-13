@@ -28,8 +28,9 @@ def convertCommaDollarValue ( string ):
 			break
 	return (value)						# return the int so it can be used
 	
-# readTemplate0 (filename)
+# readTemplate0 
 #	Function locates donors based on identifiers: '$' and 'AND ABOVE'
+#	Donors are currently written to an output file.
 def readTemplate0 ( rfile, wfile ):
 	# ignore_list contains keywords for unwanted lines in 2012 ~ 2015 national geographic annual reports
 	ignore_list = ["CLICK", "SUPPORT EXPLORATION", "NATIONAL GEOGRAPHIC", "National Geographic", "ACKNOWLEDGMENT OF GIFTS", "would be like had it", "to many people and made", "NORMA SHAW", "ANNUAL REPORT", "", "Anonymous", "organization creates a", "images and narratives", "cultures, their arts,", "THE POWER OF PHILANTHROPY", "can spark conversations", "important issues we face", "better care of each other", "Member", "our planet and all", "for our grandchildren", "world through scientific", "Together we are making", "and journalists. We", "of the generous individuals,"]
@@ -75,8 +76,3 @@ def readTemplate0 ( rfile, wfile ):
 				if '$' in line and 'AND ABOVE' in line:
 					rfile.seek(last_pos)
 					cont = False
-			
-			
-			
-		
-	

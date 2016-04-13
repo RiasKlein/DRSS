@@ -13,11 +13,18 @@
 import sys
 from findDollar import *
 from readTemplate0 import readTemplate0
+from readTemplate2 import readTemplate2
 
 # Settings
 DEBUG = True		# Turn this off for release
 T_CODE = -1			# Assume that there is no existing template
-output_file_name = "out_template0.txt"
+
+if (T_CODE == 0):
+	output_file_name = "out_template0.txt"
+elif (T_CODE == 2):
+	output_file_name = "out_template2.txt"
+else:
+	output_file_name = "out_process.txt"
 
 # If there is an extra input, check for the organization code
 if len(sys.argv) > 2:
@@ -43,7 +50,10 @@ def main():
 	# Open an output file to place relevant information
 	wfile = open (output_file_name, 'w')
 		
-	readTemplate0 (rfile, wfile)
+	if (T_CODE == 0):
+		readTemplate0(rfile, wfile)
+	
+	readTemplate2(rfile, wfile)
 
 	# Close the files when we are done
 	rfile.close()
