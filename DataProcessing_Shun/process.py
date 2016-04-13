@@ -19,13 +19,6 @@ from readTemplate2 import readTemplate2
 DEBUG = True		# Turn this off for release
 T_CODE = -1			# Assume that there is no existing template
 
-if (T_CODE == 0):
-	output_file_name = "out_template0.txt"
-elif (T_CODE == 2):
-	output_file_name = "out_template2.txt"
-else:
-	output_file_name = "out_process.txt"
-
 # If there is an extra input, check for the organization code
 if len(sys.argv) > 2:
 	T_CODE = int (sys.argv[2])
@@ -47,17 +40,13 @@ def main():
 		print "Error: Failed to open the specified file. Make sure that the file is in the current directory."
 		print "Usage: python process.py [filename to process]"
 		
-	# Open an output file to place relevant information
-	wfile = open (output_file_name, 'w')
-		
 	if (T_CODE == 0):
-		readTemplate0(rfile, wfile)
-	
-	readTemplate2(rfile, wfile)
+		readTemplate0(rfile)
+	elif (T_CODE == 2):
+		readTemplate2(rfile)
 
 	# Close the files when we are done
 	rfile.close()
-	wfile.close()
 	
 	print "Data Processing: Complete"
 	

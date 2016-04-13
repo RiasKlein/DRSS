@@ -28,7 +28,10 @@ def convertDollarRedCross ( string ):
 # readTemplate2 
 #	Function locates donors based on specific identifiers 
 #	Donors are currently written to an output file.
-def readTemplate2 (rfile, wfile):
+def readTemplate2 ( rfile ):
+	# Create an output file to place relevant information
+	wfile = open ("out_template2.txt", 'w')
+
 	ignore_list = ["", "NATIONAL CORPORATE & FOUNDATION SPONSORS", "Annual gifts from", "those who rely on our", "in times of need.", "Red Cross"]
 	
 	while True:
@@ -48,6 +51,7 @@ def readTemplate2 (rfile, wfile):
 				# Checking for the ending condition
 				# After donors, Red Cross talks about their Sources of Financial Support
 				if ("Sources of Financial Support" in line):
+					wfile.close()
 					return
 				
 				if ("* As of" in line or "*As of" in line):
