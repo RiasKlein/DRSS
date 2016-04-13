@@ -20,4 +20,5 @@ def readTemplate0 ( rfile, wfile ):
 		
 		# Stop when we find the specified identifiers '$' and 'AND ABOVE'
 		if '$' in line and 'AND ABOVE' in line:
+			# Now that we found a list of donors, let's start reading them in
 			wfile.write (line)		# Right now we are simply outputting the categories
