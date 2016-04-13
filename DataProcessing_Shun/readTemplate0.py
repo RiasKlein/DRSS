@@ -48,7 +48,7 @@ def readTemplate0 ( rfile ):
 	ignore_list = ["CLICK", "SUPPORT EXPLORATION", "NATIONAL GEOGRAPHIC", "National Geographic", "ACKNOWLEDGMENT OF GIFTS", "would be like had it", "to many people and made", "NORMA SHAW", "ANNUAL REPORT", "", "Anonymous", "organization creates a", "images and narratives", "cultures, their arts,", "THE POWER OF PHILANTHROPY", "can spark conversations", "important issues we face", "better care of each other", "Member", "our planet and all", "for our grandchildren", "world through scientific", "Together we are making", "and journalists. We", "of the generous individuals,", "and agencies shown here", "received between", "helped us inspire", "January 1 and December"]
 
 	# merge_list contains keywords for entries that should be combined with the previous line
-	merge_list = ["Foundation\n", "Foundation, Inc.\n", "LLC\n", "Fund, Inc.\n", "Family Foundation\n"]
+	merge_list = ["Foundation\n", "Foundation, Inc.\n", "LLC\n", "Fund, Inc.\n", "Family Foundation\n", "Fund\n"]
 
 	while True:
 		line = rfile.readline()		# read a line from the donor report
@@ -83,13 +83,14 @@ def readTemplate0 ( rfile ):
 				if (keep_line):
 					# So we want to keep the line, let's attempt to deal with some double line entries
 					
-					# If the last word of our current entry is 'and' / 'for', then we definitely want to merge the next line
+					# Check if there is a need for merging based on the last word of our current line
 					last_word = line.rsplit(None, 1)[-1]
-					if (last_word == 'and') or (last_word == 'for') or (last_word == 'of') or (last_word == 'at'):
+
+					if (last_word == 'and') or (last_word == 'for') or (last_word == 'of') or (last_word == 'at') or (len(last_word) == 2 and last_word[-1] == ".") or (last_word[-1] == ","):
 						donor_name = line.rstrip ('\n')
 						donor_name += (" " + rfile.readline())
 						wfile.write(donor_name)
-					# If the next line is one of the merge keywords such as 'Foundation', then we will merge
+					# Look into the future (or the next line) and see if there is a need to merge based on the first word
 					else:
 						last_pos = rfile.tell()  # keep our position
 						next_line = rfile.readline()
