@@ -27,10 +27,12 @@ def convertCommaDollarValue ( string ):
 			value = int(value_string)	# convert number to int
 			break
 	return (value)						# return the int so it can be used
-
+	
 # readTemplate0 (filename)
 #	Function locates donors based on identifiers: '$' and 'AND ABOVE'
 def readTemplate0 ( rfile, wfile ):
+	ignore_list = ["CLICK", "SUPPORT EXPLORATION", "NATIONAL GEOGRAPHIC", "National Geographic", "ACKNOWLEDGMENT OF GIFTS", "would be like had it", "to many people and made", "NORMA SHAW", "ANNUAL REPORT", "", "Anonymous", "organization creates a", "images and narratives", "cultures, their arts,"]
+
 	while True:
 		line = rfile.readline()		# read a line from the donor report
 		if not line: break			# stop reading when we reach the end of the report		
@@ -41,18 +43,33 @@ def readTemplate0 ( rfile, wfile ):
 			
 			# donation_value contains the value of the donation 
 			donation_value = convertCommaDollarValue (line)
-			wfile.write ("Donation Amount: " + str(donation_value))
+			wfile.write (">>> Donation Amount: " + str(donation_value) + "\n")
 			
 			line = rfile.readline()	# this is the first donor in category
 			cont = True				# variable to keep loop going
-			
+						
 			# Now let's start getting some donor names
-			while (cont):		
-				wfile.write(line)			# write donor name into output	
+			while (cont):	
+				if ("*Deceased" in line):	# In 2012, ending condition is *Deceased
+					return
+			
+				keep_line = True
+				for word in ignore_list:
+					if word in line:
+						keep_line = False
+				
+				if (line == '\n'):
+					keep_line = False
+
+				if (keep_line):
+					wfile.write(line)		# write donor name into output	
+					
 				last_pos = rfile.tell()		# note our donor report location
 				line = rfile.readline()		# get the next line
 				if not line: break			# if line has nothing, end
 				
+				# if the next line is a new category, then we want to move back
+				# so when the loop repeats, we get an updated donation_value
 				if '$' in line and 'AND ABOVE' in line:
 					rfile.seek(last_pos)
 					cont = False
