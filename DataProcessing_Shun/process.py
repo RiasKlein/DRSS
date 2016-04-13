@@ -12,7 +12,7 @@
 
 import sys
 from findDollar import *
-from readTemplate0 import *
+from readTemplate0 import readTemplate0
 
 # Settings
 DEBUG = True		# Turn this off for release
