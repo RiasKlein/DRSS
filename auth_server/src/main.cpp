@@ -15,9 +15,14 @@ int main(int argc, char **argv){
 	int auth_port = (argc == 2) ? atoi(argv[1]) : AUTH_PORT;
 	listenfd = listen_socket(auth_port);
 
-	users["user1"] = "password1";
-
-
+	// if server is being brought back up, reload prior user credentials
+	load_existing_users(users);
+	// if first invocation ever, have an admin account so can logon
+	if(users.empty()) { 
+		users[ADMIN_USER] = ADMIN_PASSWORD;
+		save_existing_users(users);
+	}
+	
 	for ( ; ; ) {
         // Block until someone connects.
 		fprintf(stderr, "Ready to connect.\n");
@@ -27,8 +32,8 @@ int main(int argc, char **argv){
 		}
 		fprintf(stderr, "Connected\n");
 
-        // Validate credentials.
-		validate_credentials(connfd);
+		// determine type of request and handle accordingly
+		handle_request(connfd);
 
         // Close connection. Loop forever.
 		close(connfd);

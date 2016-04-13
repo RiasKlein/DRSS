@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import MySQLdb
-from flask import Flask, render_template, redirect, request, url_for, session
+import socket
+from flask import Flask, flash, render_template, redirect, request, url_for, session
 
 # Create the Flask object
 app = Flask(__name__)
@@ -9,6 +10,8 @@ mysql_host = "localhost"
 mysql_user = "php_acc"
 mysql_passwd = "Password1"
 mysql_db = "drss"
+AUTH_SERVER = "localhost"
+AUTH_PORT = 13370
 
 # for convenience of demonstration, this is all on one page.
 # in reality, for scalability want to keep the queries as specific and small as possible.
@@ -61,7 +64,43 @@ def get_nonprofits():
 	return cur_nonprofits.fetchall()
 
 def valid_credentials(username, password):
-	return True
+	return auth_server("LOGIN", credentials)
+	
+# Returns response string, either success or error message
+def auth_server(request_type, credentials, new_password=""):
+	# connect to server, send request
+	connfd = socket.socket()
+	connfd.connect((AUTH_SERVER,AUTH_PORT)) 
+	connfd.send(request_type + "\r\n")
+
+	# get response, handle errors
+	response = connfd.recv(1024)
+	if response.strip() != "VALID REQUEST":
+		connfd.close()
+		return response
+	# to login, verify credentials
+	if request_type == "LOGIN" or request_type == "REGISTER":
+		connfd.send(credentials + "\r\n")
+		response = connfd.recv(1024)
+		connfd.close()
+		return response
+	# to change password, first validate credentials
+	elif request_type == "CHANGE PASSWORD":
+		if new_password == "":
+			connfd.close()
+			return "Please enter in a new password."
+		connfd.send(credentials + "\r\n")
+		response = connfd.recv(1024)
+		print "resp1" + response
+		# if validated, change password
+		if response.strip() != "SUCCESS":
+			connfd.close()
+			return response
+		connfd.send(new_password + "\r\n")
+		response = connfd.recv(1024)
+		print "resp2" + response
+		connfd.close()
+		return response
 
 @app.route('/logout')
 def logout():
@@ -79,10 +118,15 @@ def login():
 			return redirect('/')
 		username = request.form["username"]
 		password = request.form["password"]
-		if valid_credentials(username, password):
+		credentials = username + "\t" + password
+		response = auth_server("LOGIN", credentials)
+		if response.strip() == "SUCCESS":
 			session["username"] = username
 			return redirect('/index')
-	return render_template("login.html", logged_in = False)
+		else:
+			flash(response)
+			return redirect('/')
+	return render_template("login.html")
  
 @app.route('/index', methods=['GET','POST'])
 def index():
@@ -91,9 +135,48 @@ def index():
 	nonprofit = request.args.get("nonprofit")
 	if nonprofit != None:
 		records = get_donor_html(nonprofit)
-		return render_template("index.html", records = records, nonprofit = nonprofit)
+		return render_template("index.html", records = records, nonprofit = nonprofit, logged_in = session['username'])
 	nonprofits = get_nonprofits()
-	return render_template("index.html", nonprofits = nonprofits)
+	return render_template("index.html", nonprofits = nonprofits, logged_in = session['username'])
+
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+	if 'username' not in session:
+		return redirect('/')
+	if request.method=='POST':
+		if request.form["username"] == "" or request.form["password"] == "":
+			flash("You have left a field empty!")
+			return redirect('/')
+		username = request.form["username"]
+		password = request.form["password"]
+		credentials = username + "\t" + password
+		response = auth_server("REGISTER", credentials)
+		if response.strip() == "SUCCESS":
+			return redirect('/index')
+		else:
+			flash(response)
+			return redirect('/')
+	return render_template("register.html", logged_in = session['username'])
+
+@app.route('/change_password', methods=['GET', 'POST'])
+def change_password():
+	if 'username' not in session:
+		return redirect('/')
+	if request.method=='POST':
+		if request.form["new_password"] == "" or request.form["password"] == "":
+			flash("You have left a field empty!")
+			return redirect('/')
+		username = session['username']
+		password = request.form["password"]
+		new_password = request.form["new_password"]
+		credentials = username + "\t" + password
+		response = auth_server("CHANGE PASSWORD", credentials, new_password)
+		if response.strip() == "SUCCESS":
+			return redirect('/index')
+		else:
+			flash(response)
+			return redirect('/change_password')
+	return render_template("change_password.html", logged_in = session['username'])
 
 app.secret_key = 'DRSS is pronounced duhhrs'
 # Run the Flask application

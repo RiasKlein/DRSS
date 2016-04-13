@@ -32,17 +32,20 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 {% if logged_in %}
+                    {% if logged_in == "admin" %}
+                        <li><a href="{{ url_for('register') }}">Register</a></li>
+                    {% endif %}
+                    <li><a href="{{ url_for('change_password') }}">Change Password</a></li>
                     <li><a href="{{ url_for('logout') }}">Logout</a></li>
                 {% else %}
-                    <li> ><a href="{{ url_for('login') }}">Login</a></li>
+                    <li><a href="{{ url_for('login') }}">Login</a></li>
                 {% endif %}
-
             </ul>
         </div>
     </div>
 </nav>
 
-    {% block content %}{% endblock %}
+{% block content %}{% endblock %}
 </body>
 
 </html>
