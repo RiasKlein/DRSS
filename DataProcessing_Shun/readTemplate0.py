@@ -31,7 +31,8 @@ def convertCommaDollarValue ( string ):
 # readTemplate0 (filename)
 #	Function locates donors based on identifiers: '$' and 'AND ABOVE'
 def readTemplate0 ( rfile, wfile ):
-	ignore_list = ["CLICK", "SUPPORT EXPLORATION", "NATIONAL GEOGRAPHIC", "National Geographic", "ACKNOWLEDGMENT OF GIFTS", "would be like had it", "to many people and made", "NORMA SHAW", "ANNUAL REPORT", "", "Anonymous", "organization creates a", "images and narratives", "cultures, their arts,"]
+	# ignore_list contains keywords for unwanted lines in 2012 ~ 2015 national geographic annual reports
+	ignore_list = ["CLICK", "SUPPORT EXPLORATION", "NATIONAL GEOGRAPHIC", "National Geographic", "ACKNOWLEDGMENT OF GIFTS", "would be like had it", "to many people and made", "NORMA SHAW", "ANNUAL REPORT", "", "Anonymous", "organization creates a", "images and narratives", "cultures, their arts,", "THE POWER OF PHILANTHROPY", "can spark conversations", "important issues we face", "better care of each other", "Member", "our planet and all", "for our grandchildren", "world through scientific", "Together we are making", "and journalists. We", "of the generous individuals,"]
 
 	while True:
 		line = rfile.readline()		# read a line from the donor report
@@ -50,7 +51,8 @@ def readTemplate0 ( rfile, wfile ):
 						
 			# Now let's start getting some donor names
 			while (cont):	
-				if ("*Deceased" in line):	# In 2012, ending condition is *Deceased
+				# Checking for the ending condition in 3 different years of Nat-Geo files
+				if ("Deceased" in line or "Bequest" in line):	
 					return
 			
 				keep_line = True
