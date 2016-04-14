@@ -38,12 +38,14 @@ def main():
 		rfile = open (sys.argv[1], 'r')		# open the donor report for reading
 	except:
 		print "Error: Failed to open the specified file. Make sure that the file is in the current directory."
-		print "Usage: python process.py [filename to process]"
+		print "Usage: python process.py [filename to process] [template_code]"
 		
 	if (T_CODE == 0):
 		readTemplate0(rfile)
 	elif (T_CODE == 2):
 		readTemplate2(rfile)
+		
+	#readTemplate2(rfile)
 
 	# Close the files when we are done
 	rfile.close()

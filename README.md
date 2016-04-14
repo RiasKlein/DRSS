@@ -6,12 +6,12 @@ A system that provides a repeatable process for collecting and storing publicly 
 
 System Component | Status | Comment
 --- | --- | ---
-User Interface | Not implemented |
-Login | Not implemented |
-Web Scraper | May be removed | Not as useful as PDF sources
-Data Processing | In development | Currently considering 2 input formats
-Query Processing | Not implemented |
-Database | Not implemented | 
+User Interface | In development |
+Login | In development |
+Web Scraper | Status Unknown | Not as useful as PDF sources
+Data Processing | In development | 1 template complete, 2 in development
+Query Processing | May NOT be developed | Redundant Functionality
+Database | In development | 
 
 ### Standard Procedures
 * No pushing to master (applies most of the time)
