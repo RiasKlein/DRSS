@@ -3,9 +3,20 @@ Data Processing Component
 > Issue: Different organizations label their donor lists differently
 Solution: Have templates to handle various cases
 
+> Issue: PDFs cannot be read directly as text due to formatting
+Solution: Use the pdftotext utility to convert the pdfs before reading them
+	Usage: pdftotext -raw (PDF's name) (output file's name)
+
 ### Templates (also referred to by T_CODE in process.py)
 
 0:	National Geographic
-	Template looks for '$' symbol and "AND ABOVE"
+	Keys: '$' and "AND ABOVE"
+	
+1: 	United Negro College Fund 
+	
+2: 	American National Red Cross
+	Keys: '$' and 'or more' and 'annually'
+	
+3: 	
 	
 
