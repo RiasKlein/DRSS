@@ -1,10 +1,10 @@
 #################################################################################
-# 																			   	#
+#                                                                               #
 # readTemplate2.py																#
 #																				#
 #	Contains the reading procedure for files that conform to template 2			#
 #	Template 2 uses the keys of '$', 'or more', 'annually'						#
-#	This was especially made to handle files from: American Red Cross			#	
+#	This was especially made to handle: American Red Cross 2015 report          #	
 # 																			   	#																		   #
 #	Written by: Shunman Tse										Spring 2016	   	#
 #																			   	#
@@ -23,7 +23,16 @@ def convertDollarRedCross ( string ):
 	elif '$500,000' in string:
 		return 500000
 	elif '$250,000' in string:
-		return 250000		
+		return 250000	
+
+# merge_lines
+#	Function takes the current line and merges with the next line
+#	The \n character is stripped off
+#	The result is returned 
+def mergeLines ( line, next_line ):
+	result = line.rstrip ('\n')
+	result += (" " + next_line)
+	return result		
 
 # readTemplate2 
 #	Function locates donors based on specific identifiers 
@@ -32,7 +41,11 @@ def readTemplate2 ( rfile ):
 	# Create an output file to place relevant information
 	wfile = open ("out_template2.txt", 'w')
 
-	ignore_list = ["", "NATIONAL CORPORATE & FOUNDATION SPONSORS", "Annual gifts from", "those who rely on our", "in times of need.", "Red Cross"]
+	# ignore_list contains keywords for unwanted lines
+	ignore_list = ["Anonymous", "*As of", "THANKS TO OUR SUPPORTERS", "life-changing and", "", "NATIONAL CORPORATE & FOUNDATION SPONSORS", "Annual gifts from", "those who rely on our", "in times of need.", "Red Cross"]
+	
+	# merge_list contains lines to look out for that should be merged with the previous line
+	merge_list = ["Foundation\n"]
 	
 	while True:
 		line = rfile.readline() 
@@ -54,9 +67,11 @@ def readTemplate2 ( rfile ):
 					wfile.close()
 					return
 				
-				if ("* As of" in line or "*As of" in line):
+				# Check for the ending of the final donor list
+				if ("The American Red Cross wishes to thank our most generous supporters." in line):
 					break
 					
+				# Check whether there are keywords in the line for skipping this line
 				keep_line = True
 				for word in ignore_list:
 					if word in line:
@@ -65,8 +80,19 @@ def readTemplate2 ( rfile ):
 				if (line == '\n'):
 					keep_line = False
 					
+				# If we still have our line at this point, keep it
 				if (keep_line):
-					wfile.write(line)
+					# So we want to keep the line, let's attempt to deal with some multi-line names
+					
+					# Look into the future (or the next line) and see if there is a need to merge lines
+					last_pos = rfile.tell()
+					next_line = rfile.readline()
+					if next_line in merge_list:
+						donor_name = mergeLines (line, next_line)
+						wfile.write(donor_name)
+					else:
+						rfile.seek (last_pos)
+						wfile.write(line)
 					
 				last_pos = rfile.tell()		# note our donor report location
 				line = rfile.readline()		# get the next line
