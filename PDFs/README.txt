@@ -51,8 +51,8 @@ http://www.nfwf.org/whoweare/mediacenter/Pages/publications.aspx
 
 
 ########## Smithsonian Institution ##########
-Smithsonian Institution (2014): 2014-Smithsonian-Annual-Report.pdf
-https://www.si.edu/Content/Pdf/About/2014-Smithsonian-Annual-Report.pdf
+2014: https://www.si.edu/Content/Pdf/About/2014-Smithsonian-Annual-Report.pdf
+** Conversion of report failed with both Adobe Acrobat Reader and pdftotext
 
 
 
