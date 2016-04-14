@@ -115,7 +115,7 @@ def findDonationStart ( rfile ):
 		# Remember our starting file position to reset to when we find the starting donation amount
 		lastFilePos = rfile.tell()
 
-		line = rfile.readline().strip(BULLET_UNICODE + SPADE_UNICODE + ' ')
+		line = rfile.readline().strip(BULLET_UNICODE + SPADE_UNICODE + ' \n')
 
 		# If no donation info was found before the end of the file, return False
 		if not line:
@@ -141,7 +141,7 @@ def processDonors( rfile ):
 
 	lst = []
 
-	line = rfile.readline().strip(BULLET_UNICODE + SPADE_UNICODE + ' ')
+	line = rfile.readline().strip(BULLET_UNICODE + SPADE_UNICODE + ' \n')
 
 	# Start processing the donation/donor data
 	while line:
@@ -166,7 +166,7 @@ def processDonors( rfile ):
 
 
 		# Get the next line for further processing
-		line = rfile.readline().strip(BULLET_UNICODE + SPADE_UNICODE + ' ')
+		line = rfile.readline().strip(BULLET_UNICODE + SPADE_UNICODE + ' \n')
 
 	return lst
 
@@ -179,14 +179,23 @@ def writeData( lst, wfile ):
 	data to be written to the output file.
 	'''
 
-	# Loop over the lst and write the data to the file with newlines in between each
-	"""
-	for i in range(len(lst)):
-		if lst[i] != "":
-			wfile.write(lst[i] + '\n')
-	"""
-
+	ignore_list = ["special events", "*Includes", "MAJOR", "My number one", "I need to", "James Mbyrukira", "Chair, Dep", "UNCF-member", "U N C F", "lists represent", "accurate listing"]
+	
+	merge_list = ["Company"]
+	
+	# Loop over lst and write the data to the file with newlines in between each
 	for line in lst:
-		if not line: break
-		wfile.write(line)
+		if not line: break			# make sure we got something to work with
+		line = str(line)			# make sure our line is a string
+		
+		# Presenting the UNCF String Immigration Service 
+		keep_line = True			# assume we want this line
+		
+		# Check if the line contains unwanted "illegal" goods
+		for word in ignore_list:
+			if word in line:
+				keep_line = False
+		
+		if (keep_line):
+			wfile.write(line + "\n")
 
