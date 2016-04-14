@@ -14,6 +14,7 @@ import sys
 from findDollar import *
 from readTemplate0 import readTemplate0
 from readTemplate2 import readTemplate2
+from readTemplate3 import readTemplate3
 
 # Settings
 DEBUG = True		# Turn this off for release
@@ -44,8 +45,10 @@ def main():
 		readTemplate0(rfile)
 	elif (T_CODE == 2):
 		readTemplate2(rfile)
-		
-	#readTemplate2(rfile)
+	elif (T_CODE == 3):
+		readTemplate3(rfile)
+				
+	readTemplate3(rfile)
 
 	# Close the files when we are done
 	rfile.close()
