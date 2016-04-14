@@ -14,9 +14,10 @@ Solution: Use the pdftotext utility to convert the pdfs before reading them
 	
 1: 	United Negro College Fund 
 	
-2: 	American National Red Cross
+2: 	American National Red Cross (2015)
 	Keys: '$' and 'or more' and 'annually'
 	
-3: 	
+3: 	National Public Radio
+	Keys: 'NPR Supporters' and '2015 Supporters'
 	
 
