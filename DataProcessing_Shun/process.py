@@ -48,7 +48,7 @@ def main():
 	elif (T_CODE == 3):
 		readTemplate3(rfile)
 				
-	readTemplate3(rfile)
+	#readTemplate3(rfile)
 
 	# Close the files when we are done
 	rfile.close()

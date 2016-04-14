@@ -18,5 +18,6 @@ Solution: Use the pdftotext utility to convert the pdfs before reading them
 	Keys: '$' and 'or more' and 'annually'
 	
 3: 	National Public Radio
+	Keys: 'NPR Supporters' and '2015 Supporters'
 	
 
