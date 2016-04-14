@@ -9,8 +9,8 @@ System Component | Status | Comment
 User Interface | In development |
 Login | In development |
 Web Scraper | Status Unknown | Not as useful as PDF sources
-Data Processing | In development | Currently considering 2 input formats
-Query Processing | May NOT be developed |
+Data Processing | In development | 1 template complete, 2 in development
+Query Processing | May NOT be developed | Redundant Functionality
 Database | In development | 
 
 ### Standard Procedures
