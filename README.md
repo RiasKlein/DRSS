@@ -10,7 +10,7 @@ User Interface | In development |
 Login | In development |
 Web Scraper | Status Unknown | Not as useful as PDF sources
 Data Processing | In development | Currently considering 2 input formats
-Query Processing | Not implemented |
+Query Processing | May NOT be developed |
 Database | In development | 
 
 ### Standard Procedures
