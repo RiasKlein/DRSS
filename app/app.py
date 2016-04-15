@@ -1,7 +1,10 @@
-#!/usr/bin/python
 import MySQLdb
 import socket
+import os
+import glob # glob()
+import subprocess # popen()
 from flask import Flask, flash, render_template, redirect, request, url_for, session
+from werkzeug import secure_filename
 
 # Create the Flask object
 app = Flask(__name__)
@@ -12,6 +15,8 @@ mysql_passwd = "Password1"
 mysql_db = "drss"
 AUTH_SERVER = "localhost"
 AUTH_PORT = 13370
+ALLOWED_EXTENSIONS = set(['txt', 'pdf'])
+NON_PROFITS_FOLDER = "nonprofits/"
 
 # for convenience of demonstration, this is all on one page.
 # in reality, for scalability want to keep the queries as specific and small as possible.
@@ -91,14 +96,12 @@ def auth_server(request_type, credentials, new_password=""):
 			return "Please enter in a new password."
 		connfd.send(credentials + "\r\n")
 		response = connfd.recv(1024)
-		print "resp1" + response
 		# if validated, change password
 		if response.strip() != "SUCCESS":
 			connfd.close()
 			return response
 		connfd.send(new_password + "\r\n")
 		response = connfd.recv(1024)
-		print "resp2" + response
 		connfd.close()
 		return response
 
@@ -111,7 +114,7 @@ def logout():
 @app.route('/login', methods=['GET','POST'])
 def login():
 	if 'username' in session:
-		return redirect('/index')
+		return redirect('/view_data')
 	if request.method=='POST':
 		if request.form["username"] == "" or request.form["password"] == "":
 			flash("You have left a field empty!")
@@ -122,22 +125,22 @@ def login():
 		response = auth_server("LOGIN", credentials)
 		if response.strip() == "SUCCESS":
 			session["username"] = username
-			return redirect('/index')
+			return redirect('/view_data')
 		else:
 			flash(response)
 			return redirect('/')
 	return render_template("login.html")
  
-@app.route('/index', methods=['GET','POST'])
-def index():
+@app.route('/view_data', methods=['GET','POST'])
+def view_data():
 	if 'username' not in session:
 		return redirect('/')
 	nonprofit = request.args.get("nonprofit")
 	if nonprofit != None:
 		records = get_donor_html(nonprofit)
-		return render_template("index.html", records = records, nonprofit = nonprofit, logged_in = session['username'])
+		return render_template("view_data.html", records = records, nonprofit = nonprofit, logged_in = session['username'])
 	nonprofits = get_nonprofits()
-	return render_template("index.html", nonprofits = nonprofits, logged_in = session['username'])
+	return render_template("view_data.html", nonprofits = nonprofits, logged_in = session['username'])
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
@@ -152,7 +155,7 @@ def register():
 		credentials = username + "\t" + password
 		response = auth_server("REGISTER", credentials)
 		if response.strip() == "SUCCESS":
-			return redirect('/index')
+			return redirect('/view_data')
 		else:
 			flash(response)
 			return redirect('/')
@@ -172,13 +175,38 @@ def change_password():
 		credentials = username + "\t" + password
 		response = auth_server("CHANGE PASSWORD", credentials, new_password)
 		if response.strip() == "SUCCESS":
-			return redirect('/index')
+			return redirect('/view_data')
 		else:
 			flash(response)
 			return redirect('/change_password')
 	return render_template("change_password.html", logged_in = session['username'])
 
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1] in ALLOWED_EXTENSIONS
+
+@app.route('/upload_pdfs', methods=['GET', 'POST'])
+def upload_pdfs():
+	if 'username' not in session:
+		return redirect('/')
+	app_dir = os.path.abspath("..")
+	nonprofits_dir = os.path.join(app_dir, NON_PROFITS_FOLDER)
+	if request.method == 'POST':
+		uploaded_files = request.files.getlist("file[]")
+		variable_directory = nonprofits_dir + request.form["nonprofit_choice"]
+		for file in uploaded_files:
+			if file and allowed_file(file.filename):
+				filename = secure_filename(file.filename)
+				file.save(os.path.join(variable_directory, filename))
+		flash("success!")
+		target_files = glob.glob(variable_directory + "/*.pdf") 
+		result = subprocess.Popen(["python", nonprofits_dir + "handler.py", request.form["nonprofit_choice"]] + target_files, stdout=subprocess.PIPE)
+		out = result.communicate()
+		print out
+		return redirect('/')
+	nonprofits = os.walk('../nonprofits').next()[1]
+	return render_template("upload.html", nonprofits=nonprofits)
+
 app.secret_key = 'DRSS is pronounced duhhrs'
 # Run the Flask application
 app.run("localhost", 8000, debug = True)
-

@@ -3,7 +3,7 @@
 
 {% if nonprofits %}
 	{% for org in nonprofits %}
-		<a href="{{ url_for('index', nonprofit=org[0]) }}"> {{ org[0] }}</a>
+		<a href="{{ url_for('view_data', nonprofit=org[0]) }}"> {{ org[0] }}</a>
 		<br>
 	{% endfor %}
 {% else %}
