@@ -57,3 +57,93 @@ All Reports: http://www.unfoundation.org/who-we-are/financial-information/
 ########## World Wildlife Fund ##########
 All Reports: http://www.worldwildlife.org/about/financials
 ** Cannot find donor lists
+
+
+########## German Marshall Fund of the US ###########
+All Reports: http://www.gmfus.org/annual-report-financials
+2013: http://www.gmfus.org/sites/default/files/AnnualReport_2013_web_0.pdf
+2012: http://www.gmfus.org/sites/default/files/AnnualReport_2012_web.pdf
+2011: http://www.gmfus.org/sites/default/files/AnnualReport2011_0.pdf
+2010: http://www.gmfus.org/sites/default/files/2010gmf_annual_final_0.pdf
+2009: http://www.gmfus.org/sites/default/files/GMFAnnualReport2009_0.pdf
+** 2001-2008 not included (but are available)
+
+
+########## Pact ##########
+All Reports: http://www.pactworld.org/leadership-and-financials
+2014: http://www.pactworld.org/sites/default/files/Pact_AR_14_FNL_sprds_LR%5B1%5D.pdf
+2013: http://pactworld.org/sites/default/files/annualreport2013_web.pdf
+2012: http://www.pactworld.org/sites/default/files/PACT_AR12layout_v4%5B4%5D.pdf
+2011: http://www.pactworld.org/sites/default/files/Annual%20Report%202011.pdf
+2010: http://www.pactworld.org/sites/default/files/Pact_AR_2010_Final_6-29.pdf
+2009: http://www.pactworld.org/sites/default/files/2008-2009_AR.pdf
+
+
+########## The Community Foundation for the National Capital Region ##########
+All Reports: https://thecommunityfoundation.org/who-we-are/financial-statements/
+** Cannot find donor lists
+Grantees: https://thecommunityfoundation.org/what-we-do/grantees/
+** In website
+
+
+########## Acdi Voca ##########
+All Reports: http://acdivoca.org/resources/annual-reports
+** Cannot find donor lists
+
+
+########## Brookings Institution ##########
+All Reports: http://www.brookings.edu/support-brookings/annual-report
+2015: http://www.brookings.edu/~/media/About/Content/annualreport/2015annualreport.pdf
+2014: http://www.brookings.edu/~/media/About/Content/annualreport/2014annualreport.pdf
+2013: http://www.brookings.edu/~/media/About/Content/annualreport/2013annualreport.pdf
+2012: http://www.brookings.edu/~/media/About/Content/annualreport/2012annualreport.pdf
+** 2004-2011 not included (but are available)
+
+
+########## Elizabeth Glaser Pediatric Aids Foundations ##########
+All Reports: http://www.pedaids.org/pages/financial-information
+2014: http://b.3cdn.net/glaser/20c85e120f63ac0226_ldm6b2y8p.pdf
+2013: http://b.3cdn.net/glaser/b27b711815e468e0b3_mlbraj516.pdf
+2012: http://b.3cdn.net/glaser/3922fe318398e92f66_mlbr4owxe.pdf
+** 2007-2011 not included (but are available)
+
+
+########## AARP Foundation ##########
+** Cannot find donor list
+
+
+########## Heritage Foundation ##########
+All Reports: http://www.heritage.org/about/financials
+2014: https://s3.amazonaws.com/thf_media/2015/pdf/2014annualreport.pdf
+2013: http://thf_media.s3.amazonaws.com/2014/pdf/2013annualreport.pdf
+2012: http://thf_media.s3.amazonaws.com/2012/pdf/2012AnnualReport.pdf
+** 2007-2011 not included (but are available)
+
+########## National Democratic Institute for International Affairs ##########
+** Cannot find donor list
+
+
+########## Nuclear Threat Initiative ##########
+All Reports: http://www.nti.org/about/annual-reports/
+2014: http://www.nti.org/media/pdfs/NTI_2013-2014_Annual_Report.pdf?_=1412719948
+2012: http://www.nti.org/media/pdfs/NTI_2012_Annual_Report_FINAL.pdf?_=1380652021
+2009: http://www.nti.org/media/pdfs/annual_report_2009.pdf?_=1316466791
+** 2001-2008 not included (but are available)
+
+########## National Endowment for Democracy ##########
+2013: http://www.ned.org/resource/meet-our-president/#
+** Cannot find donor list
+
+
+########## Paralyzed Veterans of America ##########
+All Reports: http://www.pva.org/site/c.ajIRK9NJLcJ2E/b.6305435/k.6E13/Financial_Information_and_Governance.htm
+** Cannot find donor list
+
+
+########## Special Olympics ##########
+All Reports: http://www.specialolympics.org/Common/Governance_and_Finance.aspx
+** Cannot find donor list
+
+
+
+
