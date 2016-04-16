@@ -1,7 +1,6 @@
 import MySQLdb
 import socket
 import os
-import glob # glob()
 import subprocess # popen()
 from flask import Flask, flash, render_template, redirect, request, url_for, session
 from werkzeug import secure_filename
@@ -18,55 +17,26 @@ AUTH_PORT = 13370
 ALLOWED_EXTENSIONS = set(['pdf'])
 NON_PROFITS_FOLDER = "nonprofits/"
 
-# for convenience of demonstration, this is all on one page.
-# in reality, for scalability want to keep the queries as specific and small as possible.
-# should have a page containing all REPORTED YEARS, each year linking to a separate page
-# where all AMOUNT RANGES would link to a separate page, containing all donors
-# for that (amount range, year).
-def get_donor_html(website):
+def get_data(nonprofit="", year="", amount=""):
 	# connect to database
 	db = MySQLdb.connect(mysql_host, mysql_user, mysql_passwd, mysql_db)
 
 	# create cursors for nested iterative queries
-	cur_years = db.cursor()
-	cur_amounts = db.cursor()
-	cur_donors = db.cursor()
+	cur = db.cursor()
 
-	# get all reported years
-	cur_years.execute("select distinct d.year_given from Donations d where d.nonprofit = %s", (website,))
+	#execute appropriate action
+	if nonprofit == "":
+		cur.execute("select distinct d.nonprofit from Donations d order by d.nonprofit asc")
+	elif year == "":
+		cur.execute("select distinct d.year_given from Donations d where d.nonprofit = %s order by d.year_given desc", (nonprofit,))
+	elif amount == "":
+		cur.execute("select distinct d.amt_range from Donations d where d.nonprofit = %s and d.year_given = %s order by d.amt_range desc", (nonprofit, year))
+	else:
+		cur.execute("select distinct d.donor from Donations d where d.nonprofit = %s and d.year_given = %s and d.amt_range = %s order by d.donor asc", (nonprofit, year, amount,))
 
-	# form an html table organized the way we want it
-	records = []
-	for year in cur_years.fetchall():
-		records.append("<table border='1'><tr><td><b><u>" + str(year[0]) + "</b></u></td></tr>")
-		cur_amounts.execute("select distinct d.amt_range from Donations d where d.nonprofit = %s and d.year_given = %s", (website, year[0]))
-		# for every reported year, get the amount ranges for donations
-		for amount in cur_amounts.fetchall():
-			records.append("<table border = '1'><tr><td><b>" + amount[0] + "</b></td></tr>")
-			cur_donors.execute("select distinct d.donor from Donations d where d.nonprofit = %s and d.year_given = %s and d.amt_range = %s", (website, year[0], amount[0]))
-			# for every amount range list all the donors
-			for donor in cur_donors.fetchall():
-				records.append("<tr><td>" + donor[0] + "</td></tr>")
-			records.append("</table>")
-		records.append("</table><br><br>")
-
-	# close database, return html donor list	
+	# close database, return list
 	db.close()
-	return records
- 
-def get_nonprofits():
-	# connect to database
-	db = MySQLdb.connect(mysql_host, mysql_user, mysql_passwd, mysql_db)
-
-	# create cursors for nested iterative queries
-	cur_nonprofits = db.cursor()
-
-	# get all scraped nonprofits
-	cur_nonprofits.execute("select distinct d.nonprofit from Donations d")
-
-	# close database, return nonprofits list
-	db.close()
-	return cur_nonprofits.fetchall()
+	return cur.fetchall()
 
 def valid_credentials(username, password):
 	return auth_server("LOGIN", credentials)
@@ -130,16 +100,24 @@ def login():
 			flash(response)
 			return redirect('/')
 	return render_template("login.html")
- 
+
 @app.route('/view_data', methods=['GET','POST'])
 def view_data():
 	if 'username' not in session:
 		return redirect('/')
 	nonprofit = request.args.get("nonprofit")
 	if nonprofit != None:
-		records = get_donor_html(nonprofit)
-		return render_template("view_data.html", records = records, nonprofit = nonprofit, logged_in = session['username'])
-	nonprofits = get_nonprofits()
+		year = request.args.get("year")
+		if year != None:
+			amount = request.args.get("amount")
+			if amount != None:
+				donors = get_data(nonprofit, year, amount)
+				return render_template("view_data.html", nonprofit = nonprofit, year = year, amount = amount, donors = donors, logged_in = session['username'])
+			amounts = get_data(nonprofit, year)
+			return render_template("view_data.html", nonprofit = nonprofit, year = year, amounts = amounts, logged_in = session['username'])
+		years = get_data(nonprofit)
+		return render_template("view_data.html", nonprofit = nonprofit, years = years, logged_in = session['username'])
+	nonprofits = get_data()
 	return render_template("view_data.html", nonprofits = nonprofits, logged_in = session['username'])
 
 @app.route('/register', methods=['GET', 'POST'])

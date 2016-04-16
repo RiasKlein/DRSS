@@ -1,5 +1,5 @@
 -- drop database drss;
--- drop table Donations;
+drop table Donations;
 create database drss;
 use drss;
 create table Donations (
@@ -7,8 +7,11 @@ create table Donations (
 	amt_range	varchar(256),
 	nonprofit	varchar(256),
 	year_given	int,
-	primary key (donor, nonprofit, year_given)
+	primary key (donor, amt_range, nonprofit, year_given)
 );
+
+select * from Donations d;
+select distinct d.year_given from Donations d where d.nonprofit = "National Geographic" order by d.year_given asc;
 
 insert into Donations (donor, amt_range, nonprofit, year_given) values ("a", "5 and up", "National Geographic", 1994);
 insert into Donations (donor, amt_range, nonprofit, year_given) values ("b", "5 and up", "AMERICAN NATIONAL RED CROSS", 1994);
@@ -34,5 +37,4 @@ insert into Donations (donor, amt_range, nonprofit, year_given) values ("i", "15
 insert into Donations (donor, amt_range, nonprofit, year_given) values ("j", "15 and up", "National Geographic", 2004);
 insert into Donations (donor, amt_range, nonprofit, year_given) values ("k", "15 and up", "National Geographic", 2004);
 insert into Donations (donor, amt_range, nonprofit, year_given) values ("l", "15 and up", "National Geographic", 2004);
-
 

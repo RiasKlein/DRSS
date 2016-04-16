@@ -1,18 +1,39 @@
 {% extends "base.html" %}
 {% block content %}
 
-{% if nonprofits %}
-	{% for org in nonprofits %}
-		<a href="{{ url_for('view_data', nonprofit=org[0]) }}"> {{ org[0] }}</a>
-		<br>
+{% if donors %}
+	{{ nonprofit }} <br>
+	{{ year }} <br>
+	{{ amount }} <br>
+	<br> <br> <br>
+	{% for donor in donors %}
+		{{ donor[0] }}<br>
 	{% endfor %}
 {% else %}
-	{% if nonprofit %}
-		{{ nonprofit }}
-		{% for record in records %}
-		{{ record|safe }}
+	{% if amounts %}
+		{{ nonprofit }} <br>
+		{{ year }} <br>
+		{% for amount in amounts %}
+		<a href="{{ url_for('view_data', nonprofit=nonprofit, year=year, amount=amount[0]) }}"> ${{ amount[0] }}</a>
+		<br>
 		{% endfor %}
+	{% else %}	
+		{% if years %}
+			{{ nonprofit }} <br>
+			{% for year in years %}
+			<a href="{{ url_for('view_data', nonprofit=nonprofit, year=year[0]) }}"> {{ year[0] }}</a>
+			<br>
+			{% endfor %}
+		{% else %}
+			{% if nonprofits %}
+				{% for nonprofit in nonprofits %}
+				<a href="{{ url_for('view_data', nonprofit=nonprofit[0]) }}"> {{ nonprofit[0] }}</a>
+				<br>
+				{% endfor %}
+			{% endif %}
+		{% endif %}
 	{% endif %}
 {% endif %}
 
 {% endblock %}
+
