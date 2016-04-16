@@ -14,16 +14,18 @@ import sys
 from helpers import *
 
 RANGE_STR = "and up" # used for donation amount retrieval, i.e. "$1,000,000 and up"
-END_SEQ   = "and evening of stars" # used to signify the end of donors
+END_SEQ   = "an evening of stars" # used to signify the end of donors
 
 # Unicode characters will be stripped from all lines
 BULLET_UNICODE = '\xb7'
 SPADE_UNICODE  = '\x0c'
 
 
-def readTemplate1 ( rFileName, wfileName ):
+def process ( rFileName, wfileName ):
 	'''
-	Opens read and write files for donor processing; returns False if Errors occur.
+	Opens read and write files for donor processing; returns a negative number if an error occurs.
+	0 is returned if the function finishes without any errors (that are known anyway).
+	
 	Calls functions that will find donation amounts and corresponding donor names.
 	The amounts and names will be read from the file with name: rfileName
 	The amounts and names will be written to the file with name: wfileName
@@ -53,13 +55,13 @@ def readTemplate1 ( rFileName, wfileName ):
 		rfile = open(rFileName, 'r')
 	except IOError:
 		print "IOError - opening read file."
-		return False
+		return -1
 
 	try:
 		wfile = open(wfileName, 'w')
 	except IOError:
 		print "IOError - opening write file."
-		return False
+		return -2
 
 	try:
 		findDonationStart( rfile )
@@ -67,25 +69,24 @@ def readTemplate1 ( rFileName, wfileName ):
 		print "Error in findDonationStart function."
 		rfile.close()
 		wfile.close()
-		return False
+		return -3
 
 	try:
 		lst = processDonors( rfile )
 	except:
 		print "Error in processDonors function."
-		return False
+		return -4
 
-	"""
 	try:
 		writeData( lst, wfile )
 	except:
 		print "Error in writeData function."
-		return False
-	"""
-	writeData(lst, wfile)
+		return -5
 
 	rfile.close()
 	wfile.close()
+
+	return 0
 
 
 def findDonationStart ( rfile ):
@@ -126,9 +127,6 @@ def findDonationStart ( rfile ):
 			rfile.seek(lastFilePos)
 			return True
 
-
-def pg():
-	sys.stderr.write("GOOD\n")
 
 def processDonors( rfile ):
 	'''
@@ -179,23 +177,37 @@ def writeData( lst, wfile ):
 	data to be written to the output file.
 	'''
 
-	ignore_list = ["special events", "*Includes", "MAJOR", "My number one", "I need to", "James Mbyrukira", "Chair, Dep", "UNCF-member", "U N C F", "lists represent", "accurate listing"]
+	ignore_list = ["special events", "*Includes", "MAJOR DONORS", "My number one", "I need to", "James Mbyrukira", "Chair, Dep", "UNCF-member", "U N C F", "lists represent", "accurate listing", "FOUNDATIONS", '"Education', "issue because", "other problem", " Former Sen.", "CORPORATE", "CAMPAIGNS", '"College', "while family", "remain", "make", "students to enroll", "even more", " The College Board Advocacy", "GROUPS", "UNIONS", "CHURCHES", "PUBLIC CAMPAIGNS", '"Better', "of every", "reform's", "a constituency", "business community", " Dr.", "INDIVIDUALS", '"We', "will out", "will be", "that every", "competitive education", "born to", " President", '"President', "nation.", "proportion", "HBCUs", "leadership", " U.S."] 
 	
-	merge_list = ["Company"]
-	
+	merge_list = ["Company", "Foundation", "Foundation, Inc.", "and Research", "Pharmaceutical, Inc.", "Charities Central", "Worldwide, Inc.", "Advertising, Inc.", "Division", "Insurance Company", "Indiana Central", "North Texas, Inc.", "Pictures, LLC", "Resources, LLC", "Flom, LLP", "Foundation, Inc", "Charitable Foundation", "Scholarship Fund, Inc.", "Memorial Fund", "Charity Fund", "Philanthropic Fund", "Family Foundation", "Cincinnati Foundation", "Community Foundation", "Giving Fund", "Sol G. Atlas Fund", "Fund III", "Educational Trust", "Fund", "Trust", "Connections Fund", "Headlee Trust", "Gift Campaign", "Corporate Campaign", 'Hope" Campaign', "Campaign", "Campaign", "Campaign for the Community", "Employee Giving", "Combined Campaign", "Beach County", "Housing Authority", "Transportation Authority", "Employee Resource Group", "Combined Federal Campaign", "Municipal Campaign", "Services", "Employees Campaign", "Combined Federal Campaign"]
+
 	# Loop over lst and write the data to the file with newlines in between each
-	for line in lst:
-		if not line: break			# make sure we got something to work with
-		line = str(line)			# make sure our line is a string
-		
+	index = 0
+	while index < len(lst):
+		line = str(lst[index])			# get something and stringify it from the donor list
+
 		# Presenting the UNCF String Immigration Service 
 		keep_line = True			# assume we want this line
-		
-		# Check if the line contains unwanted "illegal" goods
+
+		# If the line is in ignore_list, we don't want to write it to the output file
 		for word in ignore_list:
 			if word in line:
 				keep_line = False
-		
+
 		if (keep_line):
-			wfile.write(line + "\n")
+			# See if we need to merge two donor lines that should be together
+			if index != (len(lst) - 1):
+				# Not at the last element in lst so we can check the next element
+				nextLine = str(lst[index + 1])
+				for word in merge_list:
+					# If nextLine is a word in merge_list, merge it with our current line
+					if nextLine == word:
+						line += ' ' + nextLine	# append the info that should have be together on one line
+						index += 1				# increment index an extra time since the next element in lst is appended
+						break					# break since something was merged already
+
+			wfile.write(line + '\n')
+
+		index += 1					# increment index to get the next donor
+
 
