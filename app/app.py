@@ -15,7 +15,7 @@ mysql_passwd = "Password1"
 mysql_db = "drss"
 AUTH_SERVER = "localhost"
 AUTH_PORT = 13370
-ALLOWED_EXTENSIONS = set(['txt', 'pdf'])
+ALLOWED_EXTENSIONS = set(['pdf'])
 NON_PROFITS_FOLDER = "nonprofits/"
 
 # for convenience of demonstration, this is all on one page.
@@ -189,22 +189,25 @@ def allowed_file(filename):
 def upload_pdfs():
 	if 'username' not in session:
 		return redirect('/')
-	app_dir = os.path.abspath("..")
+	app_dir = os.path.abspath(__file__) # path to this file
+	app_dir = os.path.join(app_dir, "../..") # this file's parent dir's parent (drss)
+	app_dir = os.path.abspath(app_dir) # convert that into an abs path
 	nonprofits_dir = os.path.join(app_dir, NON_PROFITS_FOLDER)
 	if request.method == 'POST':
 		uploaded_files = request.files.getlist("file[]")
-		variable_directory = nonprofits_dir + request.form["nonprofit_choice"]
+		variable_directory = os.path.join(nonprofits_dir, request.form["nonprofit_choice"])
+		target_files = []
 		for file in uploaded_files:
 			if file and allowed_file(file.filename):
 				filename = secure_filename(file.filename)
-				file.save(os.path.join(variable_directory, filename))
-		flash("success!")
-		target_files = glob.glob(variable_directory + "/*.pdf") 
-		result = subprocess.Popen(["python", nonprofits_dir + "handler.py", request.form["nonprofit_choice"]] + target_files, stdout=subprocess.PIPE)
-		out = result.communicate()
-		print out
+				target_filename = os.path.join(variable_directory, filename)
+				file.save(target_filename)
+				target_files.append(target_filename)
+		# do not use glob("*.pdf") for target_files; destroys multi-user concurrency
+		handler_path = os.path.join(nonprofits_dir, "handler.py")
+		result = subprocess.Popen(["python", handler_path, request.form["nonprofit_choice"]] + target_files)
 		return redirect('/')
-	nonprofits = os.walk('../nonprofits').next()[1]
+	nonprofits = os.walk(nonprofits_dir).next()[1]
 	return render_template("upload.html", nonprofits=nonprofits)
 
 app.secret_key = 'DRSS is pronounced duhhrs'

@@ -91,15 +91,8 @@ so no main() function is required in template.py.
 2) readTemplate must take exactly two parameters
 	- an absolute path to the filename that will be parsed
 	(for example, ./nonprofits/NatGeo/uploaded_pdf1.txt)
-	- a relative directory path to identify where to save the parsed output
-	file (for example, "NatGeo", which is relative to the directory
-	where handler.py exists (./nonprofits/))
-
-3) The produced output file must be the name of the file that was
-parsed, prepended with "out_".
-	For example: if the file "natgeo_pdf1.txt" is passed to template.py,
-	after already being converted from "natgeo_pdf1.pdf",
-	the parsed output file should be named "out_natgeo_pdf1.pdf".
+	- an absolute path to the filename that will be written out to
+	(for example, ./nonprofits/NatGeo/out_uploaded_pdf1.txt)
 - This is for concurrency reasons, as having a single "out.txt" output file
 means that multiple users cannot simultaneously upload pdfs for the same 
 nonprofit, as their requests would be overwriting one another's "out.txt".

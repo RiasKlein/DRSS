@@ -13,17 +13,26 @@ import template
 target_files = sys.argv[(ARG_FOLDER+1):]
 
 # dummy function for now
-def insert_into_db(parsed_filename):
+def insert_into_db(parsedFile_path):
 	return True
 
 for given_pdf in target_files:
+	# filename.pdf -> filename.txt
 	converted_txt_file = given_pdf.split(".")[0] + ".txt"
-	subprocess.Popen(["pdftotext", "-raw", given_pdf, converted_txt_file])
-	
-	# change to passing just a dir and an abs file path to process
-	read_file = open(converted_txt_file, "r")
-	template.readTemplate(read_file, nonprofit_dir)
-	
-	insert_into_db(nonprofit_dir + "/out_template.txt")
-	# subprocess.Popen(["rm", given_pdf, converted_txt_file, nonprofit_dir + "/out_template.txt"])
+	# .call() not .Popen(), since need to wait for this to finish
+	subprocess.call(["pdftotext", "-raw", given_pdf, converted_txt_file])
+
+	split_path = os.path.split(converted_txt_file)
+	parent_dir = split_path[0]
+	file_name = split_path[1]
+	# read filename.txt, write out_filename.txt
+	read_file = os.path.join(parent_dir, file_name)
+	write_file = os.path.join(parent_dir, "out_" + file_name)
+	template.readTemplate(read_file, write_file)
+
+	# insert out_filename.txt into database
+	insert_into_db(write_file)
+
+	# clean up filename.pdf, filename.txt, out_filename.txt
+	subprocess.Popen(["rm", given_pdf, read_file, write_file])
 	

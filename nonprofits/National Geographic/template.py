@@ -40,9 +40,10 @@ def mergeLines ( line, next_line ):
 # readTemplate0 
 #	Function locates donors based on identifiers: '$' and 'AND ABOVE'
 #	Donors are currently written to an output file.
-def readTemplate ( rfile , write_dir):
+def readTemplate ( rfile_path , wfile_path):
 	# Create an output file to place relevant information
-	wfile = open (write_dir + "/out_template.txt", 'w')
+	rfile = open(rfile_path, "r")
+	wfile = open (wfile_path, 'w')
 
 	# ignore_list contains keywords for unwanted lines in 2012 ~ 2015 national geographic annual reports
 	ignore_list = ['"', "CLICK", "SUPPORT EXPLORATION", "NATIONAL GEOGRAPHIC", "National Geographic", "ACKNOWLEDGMENT OF GIFTS", "would be like had it", "to many people and made", "NORMA SHAW", "ANNUAL REPORT", "", "Anonymous", "organization creates a", "images and narratives", "cultures, their arts,", "THE POWER OF PHILANTHROPY", "can spark conversations", "important issues we face", "better care of each other", "Member", "our planet and all", "for our grandchildren", "world through scientific", "Together we are making", "and journalists. We", "of the generous individuals,", "and agencies shown here", "received between", "helped us inspire", "January 1 and December", "IN-KIND GIFTS"]
