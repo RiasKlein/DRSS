@@ -4,6 +4,14 @@ A system that provides a repeatable process for collecting and storing publicly 
 
 ### Development Status 
 
+* As of 4/15/2016, the 'Data Processing' component supports reports from:
+  - American National Red Cross (2015)
+  - National Geographic (2012 ~ 2015)
+  - National Fish & Wildlife Foundation (2014 ~ 2015)
+  - National Public Radio (2014 ~ 2015)
+  - Support for additiional non-profits is being developed
+* Preliminary tests on integration of subsystems are favorable (and functional)
+
 System Component | Status | Comment
 --- | --- | ---
 User Interface | In development |
