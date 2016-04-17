@@ -10,7 +10,11 @@ create table Donations (
 	primary key (donor, amt_range, nonprofit, year_given)
 );
 
-select * from Donations d;
+select * from Donations d where donor like "%Jefferson%";
+delete from Donations where donor = "";
+delete from Donations where nonprofit = "UNCF" and amt_range = "0" and year_given ="2011" and donor = "liability for unrecognized tax benefits.";
+
+
 select distinct d.year_given from Donations d where d.nonprofit = "National Geographic" order by d.year_given asc;
 
 insert into Donations (donor, amt_range, nonprofit, year_given) values ("a", "5 and up", "National Geographic", 1994);

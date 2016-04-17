@@ -1,14 +1,30 @@
 {% extends "base.html" %}
 {% block content %}
 
+  <!-- bootstrap -->
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script> 
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>  
+
+  <!-- x-editable (bootstrap version) -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.6/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet"/>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.6/bootstrap-editable/js/bootstrap-editable.min.js"></script>
+
+  <!-- x-editable.js -->
+  <script src = "{{ url_for('static', filename='x-editable.js') }}"></script>
+
 {% if donors %}
 	{{ nonprofit }} <br>
 	{{ year }} <br>
 	{{ amount }} <br>
 	<br> <br> <br>
+    <div class="container">
 	{% for donor in donors %}
-		{{ donor[0] }}<br>
+	    <div>
+	      <a href="#" data-url="{{ url_for('inline_edit', nonprofit=nonprofit, year=year, amount=amount, old_donor=donor[0]) }}" class="donor_record" id="new_record" data-pk="1337" data-type="text"> {{ donor[0] }}</a>
+	    </div>
 	{% endfor %}
+    </div>
 {% else %}
 	{% if amounts %}
 		{{ nonprofit }} <br>

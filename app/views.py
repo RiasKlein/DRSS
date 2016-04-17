@@ -1,79 +1,22 @@
-import MySQLdb
-import socket
-import os
+from app import app
+import os # for system file paths, for uploading
 import subprocess # popen()
-from flask import Flask, flash, render_template, redirect, request, url_for, session
+from flask import Flask, flash, render_template
+from flask import redirect, request, url_for, session, Response
 from werkzeug import secure_filename
+from database import *
+from auth_server import *
 
-# Create the Flask object
-app = Flask(__name__)
-
-mysql_host = "localhost"
-mysql_user = "php_acc"
-mysql_passwd = "Password1"
-mysql_db = "drss"
-AUTH_SERVER = "localhost"
-AUTH_PORT = 13370
-ALLOWED_EXTENSIONS = set(['pdf'])
-NON_PROFITS_FOLDER = "nonprofits/"
-
-def get_data(nonprofit="", year="", amount=""):
-	# connect to database
-	db = MySQLdb.connect(mysql_host, mysql_user, mysql_passwd, mysql_db)
-
-	# create cursors for nested iterative queries
-	cur = db.cursor()
-
-	#execute appropriate action
-	if nonprofit == "":
-		cur.execute("select distinct d.nonprofit from Donations d order by d.nonprofit asc")
-	elif year == "":
-		cur.execute("select distinct d.year_given from Donations d where d.nonprofit = %s order by d.year_given desc", (nonprofit,))
-	elif amount == "":
-		cur.execute("select distinct d.amt_range from Donations d where d.nonprofit = %s and d.year_given = %s order by d.amt_range desc", (nonprofit, year))
-	else:
-		cur.execute("select distinct d.donor from Donations d where d.nonprofit = %s and d.year_given = %s and d.amt_range = %s order by d.donor asc", (nonprofit, year, amount,))
-
-	# close database, return list
-	db.close()
-	return cur.fetchall()
-
-def valid_credentials(username, password):
-	return auth_server("LOGIN", credentials)
-	
-# Returns response string, either success or error message
-def auth_server(request_type, credentials, new_password=""):
-	# connect to server, send request
-	connfd = socket.socket()
-	connfd.connect((AUTH_SERVER,AUTH_PORT)) 
-	connfd.send(request_type + "\r\n")
-
-	# get response, handle errors
-	response = connfd.recv(1024)
-	if response.strip() != "VALID REQUEST":
-		connfd.close()
-		return response
-	# to login, verify credentials
-	if request_type == "LOGIN" or request_type == "REGISTER":
-		connfd.send(credentials + "\r\n")
-		response = connfd.recv(1024)
-		connfd.close()
-		return response
-	# to change password, first validate credentials
-	elif request_type == "CHANGE PASSWORD":
-		if new_password == "":
-			connfd.close()
-			return "Please enter in a new password."
-		connfd.send(credentials + "\r\n")
-		response = connfd.recv(1024)
-		# if validated, change password
-		if response.strip() != "SUCCESS":
-			connfd.close()
-			return response
-		connfd.send(new_password + "\r\n")
-		response = connfd.recv(1024)
-		connfd.close()
-		return response
+@app.route('/inline_edit', methods=['GET', 'POST'])
+def inline_edit():
+	if request.method == 'POST':
+		nonprofit = request.args.get("nonprofit")
+		year = request.args.get("year")
+		amount = request.args.get("amount")
+		old_donor = request.args.get("old_donor")
+		new_record = request.form["value"]
+		return update_db(nonprofit, year, amount, old_donor, new_record)
+	return "{}"
 
 @app.route('/logout')
 def logout():
@@ -187,7 +130,3 @@ def upload_pdfs():
 		return redirect('/')
 	nonprofits = os.walk(nonprofits_dir).next()[1]
 	return render_template("upload.html", nonprofits=nonprofits)
-
-app.secret_key = 'DRSS is pronounced duhhrs'
-# Run the Flask application
-app.run("localhost", 8000, debug = True)
