@@ -1,0 +1,605 @@
+>>> Donation Amount: 2000000
+Anne T. and Robert M. Bass
+Bill & Melinda Gates Foundation
+The William and Flora Hewlett Foundation
+The Hutchins Family Foundation
+JPMorgan Chase & Co.
+LEGO Foundation
+Embassy of the State of Qatar
+David M. Rubenstein
+John L. Thornton
+University of Nevada, Las Vegas
+>>> Donation Amount: 1000000
+Food and Drug Administration
+Cecilia Yen Koo and the Koo Family
+The John D. & Catherine T. MacArthur Foundation
+The Rockefeller Foundation
+Cheryl and Haim Saban
+United Arab Emirates
+>>> Donation Amount: 500000
+Laura and John Arnold Foundation
+Australian Government, Department of Foreign Affairs and Trade
+British Foreign & Commonwealth Office
+Carnegie Corporation of New York
+Annie E. Casey Foundation
+Centers for Medicare & Medicaid Services
+Government of Denmark
+Echidna Giving
+Ford Foundation
+Mark T. Gallogly and Elizabeth B. Strickler
+Genentech–A Member of The Roche Group
+The Kresge Foundation
+Liberty Mutual Group
+Government of Norway
+Omidyar Network
+Robert C. Pozen and the Ashurst Foundation
+The Andrew H. and Ann R. Tisch Foundation
+UnitedHealth Group, Inc.
+Washington University in St. Louis
+>>> Donation Amount: 250000
+Altman/Kazickas Foundation
+Bank of America
+Dominic Barton
+Richard C. Blum and the Honorable Dianne Feinstein
+The Brown Foundation, Inc. of Houston
+Canadian Department of Foreign Affairs and International Trade
+Charities Aid Foundation
+Children’s Investment Fund Foundation
+Citi
+Steve and Roberta Denning
+Hanzade Do˘
+gan Boyner, Do˘
+gan Group
+Cheryl Cohen Effron and Blair W. Effron
+Exxon Mobil Corporation
+The Financial Services Forum
+Roger Hertog
+The Japan Foundation Center for Global Partnership
+The Korea Foundation
+Lumina Foundation
+The MasterCard Foundation
+Richard Merkin
+Microsoft Corporation
+Erin M. Mindich
+The Charles Stewart Mott Foundation
+National Institutes of Health
+Patient-Centered Outcomes Research Institute
+Porticus
+Qualcomm Incorporated
+The Rodel Foundations
+Chris Rokos
+Searle Freedom Trust
+Securities Industry and Financial Markets Association
+Alfred P. Sloan Foundation
+Edwin Soeryadjaya
+State Farm Mutual Automobile Insurance Company
+Surdna Foundation
+Swedish Ministry for Foreign Affairs
+Taipei Economic and Cultural Representative Office in the United States
+Turkish Industry and Business
+Association (TÜS˙
+IAD)
+UN University World Institute for Development Economics Research
+Antoine van Agtmael, Sunrise Foundation
+The Walton Family Foundation
+Tracy R. Wolstencroft
+>>> Donation Amount: 100000
+Robert John Abernethy
+Paul Achleitner and Deutsche Bank AG
+AIG
+Mohammed Mahfoodh Alardhi
+Alcoa Foundation
+AT&T
+Australian Civil-Military Centre– Department of Defence
+Barrick Gold Corporation
+Rex J. Bates
+Alan and Jane Batkin
+S.D. Bechtel, Jr. Foundation
+Nicolas Berggruen
+Daniel Berger
+BlackRock Financial Management, Inc.
+Brevan Howard
+Ambassador Paul L. Cejas
+Central Indiana Corporate Partnership/BioCrossroads
+Anla Cheng
+Cheniere Energy, Inc.
+Chevron
+W. Edmund Clark
+The Clearing House Association
+Betsy Z. Cohen
+Sir Ronald Cohen
+Art Collins
+Comcast NBCUniversal
+Jonathan Coslet
+The Council for the United States and Italy
+Howard Cox
+Alan and Lauren Dachs
+Daimler
+George A. David
+The Davis Foundation
+Deloitte LLP
+Paul Desmarais, Jr.
+Haluk Dinçer
+Jian Ding
+Ronald I. Dozoretz, M.D.
+Every Child Capital Fund of the Greater Cincinnati Foundation
+Alfonso Fanjul
+Raj Fernando
+Fiat
+Fidelity Investments
+Government of Finland
+David and Marianna Fisher
+Pablo R. González
+Google Inc.
+The George Gund Foundation
+Hampton Roads Community Foundation
+The Heinz Endowments
+Pete Higgins
+Gisèle Huff
+Investment Company Institute
+Gail and Benjamin Jacobs
+Kenneth M. Jacobs
+Japan International Cooperation Agency
+Robert Wood Johnson Foundation
+Ewing Marion Kauffman Foundation
+Sheryl and Chip Kaye
+Samer Khoury
+Philip Knight
+Charles Koch Foundation
+Kohlberg Kravis Roberts & Co.
+Ned Lamont
+Lear Corporation
+Lennar Corporation
+Frank P. Lowy
+The Henry Luce Foundation
+Lili Lynton
+Mars, Incorporated
+The McKnight Foundation
+MetLife, Inc.
+The NASDAQ OMX Group, Inc.
+Northrop Grumman Corporation
+Open Society Foundations
+Richard Perry
+Victor Pinchuk Foundation
+Steven Rattner and Maureen White
+Repsol Foundation
+Rio Tinto
+Wilbur and Hilary Ross
+Rob Roy, Switch
+Robert E. Rubin
+Joseph N. Sanberg
+Victoria and Roger Sant
+Peter L. Scher
+Schlosstein-Hartley Family Foundation
+Eric E. Schmidt
+Eric S. Schwartz
+Gerald Schwartz and Heather Reisman
+Shell
+SK holdings
+Statoil
+Tom Steyer and Kat Taylor
+Government of Switzerland
+Tang Xiaodan
+Lynn Thoman and the Leon Lowenstein Foundation
+Toyota
+United Parcel Service
+U.S. Agency for International Development
+Alex C. Walker Foundation
+Tom and Nancy Wall, IV
+John Hazen White, Jr.
+John O. Wynne
+40 41
+Honor Roll
+Xcoal Energy & Resources
+Jerry Yang
+Chi Zhang
+Lei Zhang
+Ezra K. Zilkha
+D.B. Zwirn Foundation
+>>> Donation Amount: 50000
+All Nippon Airways Co., Ltd.
+Allen & Company LLC
+Amgen
+Asthma and Allergy Foundation of America
+Martin Neil Baily
+Rahul Bajaj
+Banco de Sabadell S.A.
+Bank of America Merrill Lynch
+Hakeem Belo-Osagie
+Blackstone Charitable Foundation
+Crandall C. Bowles
+The Andrea and Charles Bronfman Philanthropies
+Brothers Brook Foundation
+Tobias Josef Brown
+China-United States Exchange Foundation
+The Civic Council of Greater Kansas City
+Abby Joseph Cohen
+H. Rodgin Cohen
+Jonathan E. Colby
+The Commonwealth Fund
+Cornerstone Macro
+Credit Suisse
+The Crown Family
+Deborah L. Duncan
+ECGRA
+Facebook
+The Fascitelli Foundation
+Mimi Frankel, Frankel Family Foundation
+Mitzi and Cyrus Freidheim
+Bart Friedman and Wendy A. Stein
+Susie and Michael Gelman
+Jeffrey A. Goldstein
+Good Ventures
+Graham Capital Management
+Andrew Gundlach, Anna-Maria and Stephen Kellen Foundation
+William A. Haseltine
+Huntsman Foundation
+Lou Anne King Jensen
+James A. Johnson
+Jefferies, LLC
+The Jefferson Educational Society
+The Jenesis Group
+Tom Kaplan, Wolfgang Puck Fine Dining Group
+George A. Kellner
+Korea Foundation for Advanced Studies
+Korea International Trade Association (KITA)
+Linden Trust for Conservation
+Dan W. Lufkin, Peter Jay Sharp Foundation
+John G. Macfarlane III
+Philip Mallinckrodt, The Schroeder Foundation
+The Markle Foundation
+The MITRE Corporation
+Mitsubishi Corporation (Americas)
+The Leo Model Foundation
+Ambrose Monell Foundation
+Jaime J. Montealegre
+National Association of Insurance Commissioners
+National Science Foundation
+New Silk Route
+New York University
+Nihon Keizai Shimbun-sya (NIKKEI)
+Noble Energy
+Nomura Foundation
+Northern Trust
+Richard Nye
+The Olayan Group
+PepsiCo
+Ploughshares Fund
+John G. Popp
+Potomac River Capital, LLC
+Marian Puig
+Thomas C. Ramey and Perrin Ireland
+Joseph L. Rice III
+San Diego Regional Economic Development Corporation
+Sanofi US
+Dr. Fay L. Shutzer and William A. Shutzer
+Social Security Administration
+Arne and Ruth Sorenson
+David S. and Sylvia Steiner
+Robert Stewart
+Krishen Sud
+Taconic Capital Advisors LP
+Strobe Talbott
+A. Alfred Taubman
+Time Warner, Inc.
+Ercument Tokat
+Tudor Investment Corporation
+United Technologies Corporation
+U.S. Department of Health & Human Services
+U.S. Department of Transportation
+Bernard van Leer Foundation
+Marcus Wallenberg, Wallenberg Foundations AB
+Claude Wasserstein
+Robert M. Weekley
+Beatrice W. and Anthony Welters
+Daniel H. Yergin and Angela Stent
+Arshad Zakaria
+>>> Donation Amount: 25000
+The AAA Foundation for Traffic Safety
+American Express
+Aramco Services Company
+Association of American Railroads
+The Bank of Tokyo-Mitsubishi UFJ, Ltd.
+Heinrich Böll Foundation
+Bristol-Myers Squibb Foundation
+CAF-Development Bank of Latin America
+The Morris and Gwendolyn Cafritz Foundation
+Frank Carlucci
+The Coca-Cola Company
+ConocoPhillips
+Cummins Inc.
+Kenneth W. Dam
+EDF Inc.
+Edith B. Everett
+French Ministry of Foreign Affairs
+GEICO
+Greater Phoenix Economic Council
+Teresa Heinz Kerry
+Honda North America, Inc.
+Frank F. Islam
+The Israel Institute
+Japan Bank for International Cooperation
+Peter A. Joseph
+Robert N. Kaplan
+Betsy Karel
+The Kern Family Foundation
+Peter Kimmelman
+Knowledge Society Institute
+Robert E. Marks
+Marubeni America Corporation
+Robert R. McCormick Foundation
+McKinsey & Company, Inc.
+Mitsubishi Heavy Industries America, Inc.
+Morgan Stanley
+Mario M. Morino
+Philip D. Murphy
+Lisa O’Kelly
+Peter G. Peterson Foundation
+Samuel Pisar
+Raytheon Company
+James D. Robinson III
+Jonathan Schaffzin
+Sojitz Foundation
+Sumitomo Mitsui Banking
+Corporation
+The Nelson S. Talbott Foundation
+Tata Group of companies
+United Nations Office for the Coordination of Humanitarian Affairs
+University of Chicago
+Visa Inc.
+Enzo Viscusi, Eni S.p.A.
+Volvo Research and Educational Foundations
+Judy and Fred Wilpon Family Foundation, Inc.
+WSP/Parsons Brinckerhoff
+ZTE USA
+>>> Donation Amount: 10000
+Liaquat and Meena Ahamed
+American Society of Clinical Oncology
+AttorneyFee
+Eileen A. Aptman
+The Loreen Arbus Foundation
+Arnhold Foundation
+Astra Capital Management
+The Atlantic Philanthropies
+BAE Systems, North America
+Joanne Barker
+Steffi and Robert Berne
+The Boeing Company
+Geoffrey T. Boisi and the Boisi Family Foundation
+Anders Brag
+Paul Britton
+The Brodsky Family Foundation
+Richard C. Bush
+Louis W. Cabot
+Carter Cafritz
+Conrad Cafritz
+Caterpillar Inc.
+Colorado Department of Health Care Policy and Financing
+Everett R. Cook
+Corning Incorporated Foundation
+Arthur B. Culvahouse, Jr.
+The Curtis Family Foundation
+Davis Polk & Wardwell, LLP
+Porter Dawson
+Laura A. DeFelice
+Joshua Donfeld
+The Honorable Kenneth M. Duberstein
+R.S. Evans Foundation
+Nick Farmer
+Roger C. Faxon
+Frank and Kathy Finelli
+Lawrence K. Fish
+Victoria Foley
+The Lee and Juliet Folger Fund
+Patrick Frayne
+David Friend
+Ann M. Fudge
+John L. Furth
+Gardner Grout Foundation
+General Motors Foundation
+Donna Gerstenfeld
+Goldman Sachs
+Patrick W. and Shelby Proby Gross
+Agnes Gund
+The Harris Family Foundation
+June R. Hechinger
+Hellman Foundation
+Fiona Hill
+Hitachi, Ltd.
+ITOCHU International Inc.
+Karel Janeˇ
+cek
+Joel and Ricki Kanter
+James M. Kemper
+Lee Klingenstein
+Robert and Arlene Kogod
+LegalZoom
+Toby Devan Lewis
+Linklaters LLP, on behalf of the Advancing Good Governance in International Development Seminar
+Gordon Litwin and Anne Luzzatto
+LMI Government Consulting
+Malcolm R. and Celia Lovell
+Bertil P. Lundqvist
+Monica Mandelli
+Edward and Dale Mathias
+John P. McCormick
+Arjay Miller
+Mitsui & Co. (U.S.A.), Inc.
+Allison Nathan
+Embassy of the Kingdom of the Netherlands
+The Nippon Foundation
+NTT Corp.
+Gordon and Dailey Pattee
+Dina and George Perry
+Steven Pifer
+Christopher Reynolds Foundation
+Frederic A. and Susan Rubenstein
+Amy Schulman
+Shimizu Corporation
+Stanley S. Shuman
+Skoll Centre for Global Entrepreneurship
+Emily and Robert E. Smith
+James E. Staley
+Andrew and Patricia Steffan
+Sidney Stern Memorial Trust
+Sumitomo Corporation of America
+John Templeton Foundation
+Larry D. Thompson
+Michael L. Tipsord
+Toshiba America, Inc.
+Ranvir Trehan
+UNICEF
+Paul Verbinnen and Cecilia Greene
+Verizon Communications
+The Volcker Alliance
+VOX Global
+Seymour and Kathleen Weingarten
+John C. Whitehead
+Stephen M. Wolf
+Xerox Corporation
+Rachel Zhang
+>>> Donation Amount: 5000
+American Federation of Teachers
+Robert O. and Sylvia Blake
+William M. Cameron
+Kimberly Churches
+Convergence Center for Policy Resolution
+Charles W. Duncan, Jr.
+Nancy M. Folger
+Forum for the Future of Higher Education
+William H. Frey
+Leslie I. Gold, Ph.D.
+Susan and John Gutfreund
+Katherine Clark Harris
+Phil Harvey
+Cynthia Helms
+Marie L. Knowles
+Rebecca Liao
+Bruce and Virginia MacLaury
+State of Maryland Department of Labor Licensing and Regulation (DLLR)
+Betty Ann Ottinger
+James and Theodore Pedas Family Foundation
+Marie Ridder
+David Rogers
+Robert J.T. Rosenfeld
+Frederick Stavis
+Paul and Chandler Tagliabue
+Margaret L. Tomlinson
+John Usdan
+John S. Weston
+Malcolm H. Wiener
+>>> Donation Amount: 1
+Susan Beth Anders
+William J. Antholis
+Aspen Institute
+Harley D. Balzer
+William Horton Beebe-Center
+Steven J. Bennett
+John Beyrle
+Erik Blumenkranz
+Zoë Baird Budinger and William Budinger
+Erin E. Bullinger
+Adem Bunkeddeko
+Theodore Bunzel
+Jacqueline Carter
+Samuel G. Charap
+Morris Clarke
+Morton and Shirley Cohen
+Roberta Cohen
+Stephen Cohen
+Lew and Marge Collens Fund
+Stephen Cordani
+Paul Courant
+The Morton and Dina Danseyar Family Foundation
+Keith Darden
+Paul Diperna
+Jill Dougherty
+Courtney Dunakin
+Paul Effron
+Elliot Company of Indianapolis, Inc.
+Thomas Elliott
+Sydney Farrar
+Florida International University
+Charles Freeman
+Ellen V. Futter
+Toby and Charles Gati
+Ted and Rachel Gayer
+Matthew Gebhardt
+Elizabeth Gemmill
+Elisa B. Glazer
+David B. Golder
+Alexis Gregory Foundation
+Scott Grinsell
+Marion Guggenheim
+Steve and Sheila Hamp
+Hope M. Harrison
+Nancy Maisto Hewett
+Ronda Hodges
+Kent Insley
+Inter-American Development Bank
+Robert Jackson
+Donald Jensen
+Taylor Johnson
+Gerard Jones
+Marvin Kalb
+Bruce Katz
+Mark Katz
+Katherine Kelleher
+Thomas L. Kempner
+Douglas Kiessling
+Andrew Klaber
+Robert Kleinberg
+Jim Klopper
+Christopher S. Koza
+Phyllis Jo Kubey
+Dan Henry Lee III
+Jennifer Scully Lerner
+Leonard Levie
+Wayne P. Limberg
+Amy Liu
+Eric Lohr
+Michael Love
+Claire Macelroy
+Lissette Marcelo
+Jeffrey Marlough
+Daniel Martinez
+Eduardo Martinez
+Donald F. McHenry
+Milton Mitchell
+Stephen Morris
+Kara Ramirez Mullins and Sean F. Mullins
+Sakura Namioka
+New Venture Fund
+Norris, Tysse, Lampley & Lakis, LLP
+Robert C. Nurick
+Robert Orttung
+Steven Pearson
+Peter Person
+Marc Peters
+Philip A. Piro
+Samuel Plimpton
+William Eric Pomeranz
+Samuel Price
+Yuanyuan Qin
+Blair Ruble
+Nicholas Rugoff
+Raymond Ryan
+The Sasakawa Peace Foundation
+B. Francis Saul II
+Henry B. Schacht
+Robert Schulz
+Michael Schwartz
+Naveen Shahani
+Henry Silver
+Michael Sklaroff
+Hendrith Vanlon Smith
+Alexander Sokolowski
+Marjorie H. Sonnenfeldt
+Constanze Stelzenmüller
+Santiago Torres
+Peeranut Visetsuth
+Frank A. Weil
+Robert Weinberger
+Shannon and Paul Wolfe
+George Yin
+Felicity Yost
