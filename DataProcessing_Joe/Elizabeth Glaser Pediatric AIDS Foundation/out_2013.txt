@@ -1,4 +1,4 @@
-$1 MILLION
+>>> Donation Amount: 1000000
 The Children's Investment Fund Foundation
 Department of Foreign Affairs, Trade and Development Canada
 Swedish International Development Cooperation Agency
