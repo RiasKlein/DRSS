@@ -3,7 +3,7 @@
 A system that provides a repeatable process for collecting and storing publicly available nonprofit gift data.
 
 Web Scraper Instructs:
-$ cd /Users/errolelbasan/Documents/Codes/DRSS/tutorial 
+$ cd PATH/DRSS/tutorial 
 $ scrapy crawl smithsonian
 
 ### Development Status 
