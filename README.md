@@ -3,8 +3,8 @@
 A system that provides a repeatable process for collecting and storing publicly available nonprofit gift data.
 
 Web Scraper Instructs:
-$ cd PATH/DRSS/tutorial 
-$ scrapy crawl smithsonian
+$ cd PATH/DRSS/(Name of first folder)
+$ scrapy crawl (Name of spider, it's inside the .py at line name=)
 
 ### Development Status 
 
