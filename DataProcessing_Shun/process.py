@@ -12,6 +12,7 @@
 
 import sys
 from findDollar import *
+from sample_readTemplate import readTemplate
 from readTemplate0 import readTemplate0
 from readTemplate2 import readTemplate2
 from readTemplate3 import readTemplate3
@@ -41,15 +42,8 @@ def main():
 	except:
 		print "Error: Failed to open the specified file. Make sure that the file is in the current directory."
 		print "Usage: python process.py [filename to process] [template_code]"
-		
-	if (T_CODE == 0):
-		readTemplate0(rfile)
-	elif (T_CODE == 2):
-		readTemplate2(rfile)
-	elif (T_CODE == 3):
-		readTemplate3(rfile)
 				
-	readTemplate0(rfile)
+	readTemplate(rfile)
 
 	# Close the files when we are done
 	rfile.close()
