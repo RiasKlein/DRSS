@@ -1,12 +1,20 @@
 import sys # for try-except
 import MySQLdb
 from flask import Response
+# database credentials stored in config.py
+from config import *
 
-mysql_host = "localhost"
-mysql_user = "php_acc"
-mysql_passwd = "Password1"
-mysql_db = "drss"
+'''
+Database functions:
+- get_data()		-->		returns requested scope of data
+- update_db()		-->		updates the database given new data
 
+'''
+
+
+
+# Returns relevant entries in the database based on the specified scope:
+# (list of nonprofits, list of years, list of amounts, list of donors)
 def get_data(nonprofit="", year="", amount=""):
 	# connect to database
 	db = MySQLdb.connect(mysql_host, mysql_user, mysql_passwd, mysql_db)
@@ -28,6 +36,12 @@ def get_data(nonprofit="", year="", amount=""):
 	db.close()
 	return cur.fetchall()
 
+
+
+
+# Sends an inline x-editable edit to the database to update it.
+# Exceptions: sent back to the user and displayed via JavaScript
+#			: database only commits changes if no exceptions occured
 def update_db(nonprofit, year, amt, donor, new_donor):
 	# connect to database
 	db = MySQLdb.connect(mysql_host, mysql_user, mysql_passwd, mysql_db)
@@ -54,4 +68,3 @@ def update_db(nonprofit, year, amt, donor, new_donor):
 	db.close()
 	return "{}"
 	# return Response(status=200, mimetype="application/json")
-

@@ -2,6 +2,7 @@
 {% block content %}
 
   <!-- bootstrap -->
+  <!-- for button css -->
   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
   <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script> 
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>  
@@ -25,14 +26,25 @@
 	    </div>
 	{% endfor %}
     </div>
+<br><br>
+<a href="{{ url_for('view_data', nonprofit=nonprofit, year=year) }}"> Go Back </a>
+
 {% else %}
 	{% if amounts %}
 		{{ nonprofit }} <br>
 		{{ year }} <br>
 		{% for amount in amounts %}
-		<a href="{{ url_for('view_data', nonprofit=nonprofit, year=year, amount=amount[0]) }}"> ${{ amount[0] }}</a>
-		<br>
+		<a href="{{ url_for('view_data', nonprofit=nonprofit, year=year, amount=amount[0]) }}">
+		{% if amount[0]|int != 0 %}
+			$ {{ amount[0] }}
+		{% else %}
+			< {{ amount[0] }} >
+		{% endif %}
+		</a> <br>
 		{% endfor %}
+<br><br>
+<a href="{{ url_for('view_data', nonprofit=nonprofit) }}"> Go Back </a>
+
 	{% else %}	
 		{% if years %}
 			{{ nonprofit }} <br>
@@ -40,6 +52,8 @@
 			<a href="{{ url_for('view_data', nonprofit=nonprofit, year=year[0]) }}"> {{ year[0] }}</a>
 			<br>
 			{% endfor %}
+<br><br>
+<a href="{{ url_for('view_data') }}"> Go Back </a>
 		{% else %}
 			{% if nonprofits %}
 				{% for nonprofit in nonprofits %}
@@ -50,6 +64,7 @@
 		{% endif %}
 	{% endif %}
 {% endif %}
+
 
 {% endblock %}
 

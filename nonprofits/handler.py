@@ -1,8 +1,17 @@
+# database credentials
+mysql_host = "localhost"
+mysql_user = "php_acc"
+mysql_passwd = "Password1"
+mysql_db = "drss"
+
+
 import MySQLdb
 import sys
 import os
 import subprocess
 
+# Performs file path manipulation to determine the absolute path to
+# the nonprofits folder that the pdfs have been uploaded to.
 ARG_FOLDER = 1
 app_dir = os.path.dirname(__file__)
 nonprofit_dir = os.path.join(app_dir, sys.argv[ARG_FOLDER])
@@ -13,13 +22,7 @@ import template
 # [omitted] <variable>
 target_files = sys.argv[(ARG_FOLDER+1):]
 
-mysql_host = "localhost"
-mysql_user = "php_acc"
-mysql_passwd = "Password1"
-mysql_db = "drss"
-
-
-# dummy function for now
+# Inserts the parsed file output into the database line by line.
 def insert_into_db(written_file, nonprofit, year_given):
 	read_file = open(written_file, "r")
 	donation_amt = 0

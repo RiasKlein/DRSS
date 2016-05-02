@@ -1,0 +1,979 @@
+>>> Donation Amount: 1000000
+Merck & Company, Inc.
+Target
+Wachovia Wells Fargo Foundation
+>>> Donation Amount: 500000
+AT&T
+Bloomberg
+Foot Locker Foundation, Inc.
+Google, Inc.
+Lowe's Charitable and Education Foundation
+McDonald's Corporation
+P&G Fund of The Greater Cincinnati Foundation
+The Boston Consulting Group
+Walmart Foundation
+>>> Donation Amount: 100000
+Altria Group, Inc.
+American Airlines
+American Express
+Amtrak
+Anheuser-Busch Companies, Inc.
+Bank of America Charitable Foundation
+BET Networks
+BlueCross BlueShield of Florida
+Carmen Group
+Chevron Corporation
+Citi Foundation
+Costco Wholesale Corporation
+Darden Restaurants, Inc.
+Dell
+Delta Air Lines
+FedEx Corporation
+GE Foundation
+General Mills Foundation
+General Motors Foundation
+Georgia Power Foundation, Inc.
+Goldman Sachs Foundation
+i-MAPP Marketing Consulants, LLC
+ING
+Johnson Controls Foundation
+Marathon Oil
+Nissan North America, Inc.
+Oracle USA, Inc.
+Sodexo Foundation
+The UPS Foundation
+Time Magazine
+Toyota Motor Sales USA, Inc.
+United Health Foundation
+United Water
+USA Funds
+Verizon Wireless
+Wells Fargo Bank
+WGN Television
+Young & Rubicam
+>>> Donation Amount: 50000
+ALDI, Inc.
+Chadbourne & Parke, LLP
+Citi
+ClearPath Solutions Group
+ComEd, an Exelon Company
+Ebony Magazine
+Edison International Foundation
+Entergy Corporation
+Essence Magazine
+Georgia-Pacific Foundation
+GlaxoSmithKline
+Intel Foundation
+Interactive One
+Lockheed Martin Corporation
+Macy's
+MetLife Foundation
+Monsanto Fund
+Myers Ventures, LLC
+NASCAR
+PepsiCo
+Pfizer, Inc.
+PNC Bank Foundation
+Polsinelli & Shugart
+San Manuel Band of Mission Indians
+Sprint Foundation
+State Farm Mutual Automobile Insurance Company
+Sweepstake Production, LLC
+The Boeing Company
+The Coca-Cola Company
+The Kroger Company
+The Xerox Corporation
+TV Guide
+>>> Donation Amount: 25000
+22 Squared, Inc.
+AFLAC
+AGL Resources, Inc.
+AirTran Airways, Inc.
+Alaska Airlines
+Anthem BlueCross BlueShield
+Avis Budget Group
+AXA Foundation
+Bank of America
+BB&T Charitable Foundation
+Best Buy
+Black Enterprise Magazine
+BNY Mellon
+BP Corporation
+Bristol-Myers Squibb Company
+CenterPoint Energy
+Colgate-Palmolive Company
+Disney Worldwide Services
+DTE Energy
+Eli Lilly and Company
+Farmer's Insurance Group, Inc.
+Fitch Even Tabin & Flannery
+Ford Motor Company
+Greyhound Lines, Inc.
+H-E-B
+Hewitt
+Houston Astros Baseball Club
+HSBC
+Illinois Tool Works/Illinois Tool Works Foundation
+Investment Company Institute Education Foundation
+ITT Corporation
+Jet Magazine
+Jim Beam Brands Co.
+JPMorgan Chase
+Kimberly-Clark Foundation, Inc.
+Liberty Mutual
+Malcolm Pirnie, Inc.
+MasterCard Worldwide
+Mellon Financial Corporation Foundation
+Northrop Grumman Corporation
+NYSE Foundation, Inc.
+PSEG Services Corporation
+Publix Super Markets, Inc.
+R.J. Reynolds Foundation
+Rx for Reading
+Shell Oil Company
+Sony Corporation of America
+SPX Foundation
+SunTrust Bank
+Super Grocers
+Synovus Financial Corporation
+The Allstate Corporation
+The Home Depot, Inc.
+The Hoop Dreams Scholarship Fund
+The Parades Shops/Jethro Pugh
+The Pentair Foundation
+Union Bank
+Verizon Foundation
+WCCO - TV
+WJLA - TV Channel 7
+Wm. Wrigley, Jr., Company Foundation
+>>> Donation Amount: 15000
+Air Products and Chemicals, Inc.
+Andrews Kurth, LLP
+Assurant
+BNSF Foundation
+Caterpillar Foundation
+CDM
+Cox Communications, Inc.
+Emerson Process Management
+Equifax, Inc.
+Hess Foundation
+Images USA
+JCPenney
+Liberty Bank
+Louisiana Lottery Corporation
+McDonald's Cleveland Crew Scholarship
+New Jersey Manufacturers Insurance Company
+New York Giants Football Team, Inc.
+Pacific Gas & Electric Company
+Ronald McDonald House Charities - Indiana Central
+Ronald McDonald's House Charities of North Texas, Inc.
+Sara Lee Foundation
+St. Paul Travelers, Inc.
+St. Petersburg Golf Classic
+The Blindside Left Tackle Pictures, LLC
+The Fremont Group Foundation
+The Lincoln Electric Foundation
+Tulalip Resort Casino
+Turner Broadcasting Systems, Inc.
+USAA Corporation
+Vectren Foundation, Inc.
+>>> Donation Amount: 10000
+Alliance Data
+American Direct Marketing Resources, LLC
+Clearpath
+Dominion
+Duchossois Industries, Inc.
+Estee Lauder, Inc.
+Frito-Lay, Inc.
+GEICO
+Hallmark Corporate Foundation
+HMS Host
+KBR, Inc.
+Marshall & Ilsley Corporation
+MGM Grand Detroit Casino
+Michelin North America
+New York Knicks
+New York Yankees Foundation
+Nordstrom
+Ocean Bank
+Regions Bank
+RR Donnelley
+Schering-Plough Corporation
+Segue
+Skadden, Arps, Slate, Meagher & Flom, LLP
+Sonoco Foundation
+Sysco Corporation
+Tampa Bay Buccaneers
+The Clorox Company Foundation
+The Millipore Foundation
+T-Mobile
+Vulcan Materials Company Foundation
+Wisconsin Energy Corporation Foundation, Inc.
+Includes in-kind contribution
+Includes support for sponsorships and
+>>> Donation Amount: 5000
+3M Company
+Allison Transmission
+ARAMARK
+Associated Bank
+Baird Foundation, Inc.
+Bank of The West
+BlueCross BlueShield of Louisiana
+BlueCross BlueShield of South Carolina
+BMW
+Capital One
+Cappex
+CGX Mount Vernon Printing Company
+Chicago Tribune Foundation
+CNA Foundation
+Coaxum Enterprises, Inc.
+Cooper DDB & Hayes, Inc.
+Corn Products International
+Cox Enterprises, Inc.
+CVS Corporation, Inc.
+D. Stephenson Construction, Inc.
+Dow Corning Corporation
+Dow Jones Foundation
+Fiserve
+Freemind Ventures, LLC
+General Dynamics Land Systems Division
+Giant Eagle Foundation
+Gilbane Building Company, Inc.
+His & Her Hair Goods Company
+H.J. Heinz Company Foundation
+Honda of Bowie
+Honda of South Carolina Mfg., Inc.
+Imation Corp.
+Jeremiah C. Gaffney Funeral Home
+Kikkoman Foods Foundation, Inc.
+Legacy Bank
+LexisNexis
+Louisiana Lottery Corporation
+MASCO Corporation
+Mayo Foundation for Medical Education and Research
+Mcleod Health
+McMoRan Oil & Gas, LLC
+Mutual of America Foundation
+Novartis Pharmaceuticals Corporation
+Ortho-McNeil-Janssen Pharmaceutical, Inc.
+Psychists, Inc.
+Robert Half International, Inc.
+Robins, Kaplan, Miller & Ciresi, LLP
+Rolls-Royce Corporation
+Ronald McDonald House Charities Central
+South Jersey Industries, Inc.
+Southstar Management, Inc.
+Starwood Hotels & Resorts Worldwide, Inc.
+St. Vincent Hospital and HCC, Inc.
+Tampa Bay Sports Commission, Inc.
+The Alcon Foundation
+The Goodyear Tire & Rubber Company
+The Havi Group, Inc.
+The House of Bernstein, Inc.
+The Washington Post Company
+Tyson Foundation, Inc.
+Volkswagen North American
+Warrior Group
+Wendy's of New Orleans Advertising, Inc.
+West & Associates, LLP
+Wilkes & McHugh, PA
+>>> Donation Amount: 1000000
+Bill & Melinda Gates Foundation
+The Kresge Foundation
+The Andrew W. Mellon Foundation
+>>> Donation Amount: 100000
+The Ahmanson Foundation
+The Ray Charles Foundation
+Ford Foundation
+The Paul and Mary Haas Foundation
+The Lincy Foundation
+The John D. and Catherine T. MacArthur Foundation
+The J. Willard and Alice S. Marriott Foundation
+The Ambrose Monell Foundation
+Samuel I. Newhouse Foundation Inc.
+The Peierls Foundation
+The Robinson-Harris Foundation, Inc.
+The Skirball Foundation
+The Walton Family Foundation
+The Daniel M. Ziff Foundation
+>>> Donation Amount: 50000
+The Druskin Family Foundation, Inc.
+George R. Kendall Foundation
+John S. and James L. Knight Foundation
+The James Annenberg La Vea Charitable Foundation
+The Thomas and Dorothy Leavey Foundation
+Lilly Endowment, Inc.
+The Meadows Foundation
+Charles Miller Memorial Foundation, Inc.
+The RosaMary Foundation
+Peter B. and Adeline W. Ruffin Foundation
+The Skillman Foundation
+>>> Donation Amount: 25000
+Castle Rock Foundation
+The Elmer Roe Deaver Foundation
+Alfred G. and Hope P. Goldstein Fund
+Hagedorn Fund
+The Hausman Family Charitable Trust
+Hudson-Webber Foundation
+Artishia and Frederick Jordan Scholarship Fund, Inc.
+The Katzenberger Foundation, Inc.
+William M. Keck Jr., Foundation
+Keller Family Foundation
+McGregor Fund
+Edward M. Nagel Foundation
+The Negaunee Foundation
+Newman's Own Foundation
+Stan and Joyce Rawley Foundation
+Walter H. and Marjory M. Rich Memorial Fund
+The Rees-Jones Foundation
+Reynolds American Foundation
+Supreme Council Benevolent Foundation
+The Alice Tully Foundation
+Turn 2 Foundation
+The Wollenberg Foundation
+>>> Donation Amount: 10000
+Fred C. and Katherine B. Andersen Foundation
+John W. Anderson Foundation
+Walter C. and Lucy I. Astrup Fund, No. 2
+Banbury Fund, Inc.
+S.D. Bechtel, Jr., Foundation
+The Beulah Fund
+Judy Buechner Advised Fund
+Burchenal Family Foundation
+Bushrod H. Campbell and Adah F. Hall Charity Fund
+Amon G. Carter Foundation
+Cedric "The Entertainer" Charitable Foundation, Inc.
+Edwin W. and Catherine M. Davis Foundation
+The D'Onofrio Foundation
+English, Bonter, Mitchell Foundation
+Ella Fitzgerald Charitable Foundation
+Fremont Group Foundation
+Rollin M. Gerstacker Foundation
+The Graco Foundation
+Verle and Eleanor Hammond Foundation
+Mary W. Harriman Foundation
+Hess Foundation
+Herman N. Hipp First Foundation
+Ryan Howard Family Foundation
+Minnie I. Hutchinson Memorial Foundation
+Dora Donner Ide Core Trust
+Ingram-White Castle Foundation
+Irving H. and Marjorie S. Isaac Philanthropic Fund
+The Matthew and Roberta Jenkins Family Foundation
+The James M. Johnston Trust for
+Charitable Education
+Jolley Foundation
+KeyBank Foundation
+F.M. Kirby Foundation, Inc.
+A.G. Lafley Fund of The Greater Cincinnati Foundation
+Lakeside Foundation
+The Ray M. and Mary Elizabeth Lee Foundation, Inc.
+Litterman Family Foundation
+The Fred Maytag Family Foundation
+The McCutchen Foundation
+The Eugene McDermott Foundation
+McInerney Family Foundation
+Laurie Michaels Advised Fund of Aspen Community Foundation
+William A. and Elizabeth B. Moncrief Foundation
+Nashner Fund
+The Nord Family Foundation
+The Oceanic Heritage Foundation
+The Rich Foundation, Inc.
+James Rosin Foundation
+Rundgren Foundation
+Sage Foundation
+The San Francisco Foundation
+The Siragusa Foundation
+The Donald T. Sterling Charitable Foundation
+Sulzberger Foundation Ruth Holmberg Giving Fund
+H. van Ameringen Foundation
+Venable Foundation
+>>> Donation Amount: 5000
+Max A. Adler Charitable Foundation, Inc.
+Hugh J. Andersen Foundation
+M.D. Anderson Foundation
+Aileen S. Andrew Foundation
+The Paul and Edith Babson Foundation
+George and Frances Ball Foundation
+Banfi Vintners Foundation
+Baptist Community Ministries
+The Barra Foundation, Inc.
+The Sandra Atlas Bass and Edythe & Sol G. Atlas Fund
+Thomas W. Bean Foundation
+Beane Family Foundation
+Bessie B. Bell Trust
+Frances and Benjamen Benenson Foundation, Inc.
+The Black Professionals Association Charitable Foundation
+Blum-Kovler Foundation
+Bridgemill Foundation
+Carnahan-Jackson Foundation
+The Castillo Charitable Foundation
+The Chatlos Foundation, Inc.
+The George W. Codrington Charitable Foundation
+Cogswell Benevolent Trust
+Arie and Ida Crown Memorial
+The Dancing Skies Foundation
+Demoulas Foundation
+Dick and Betsy DeVos Foundation
+Zalec Familian and Lillian Levinson Foundation
+The Fann Family Foundation
+Max M. & Marjorie S. Fisher Foundation
+The Flocco Family Charitable Fund
+The Mary Alice Fortin Foundation, Inc.
+John and Mary Franklin Foundation
+Robert W. Galvin Foundation, Inc.
+Edward & Verna Gerbic Family Foundation
+Germeshausen Foundation, Inc.
+The Goodnow Fund
+The Henry W. Grady Foundation, Inc.
+Mr. and Mrs. David F. Hart Fund
+Albert and Ethel Herzstein Charitable Foundation
+The Sandy Hill Foundation
+Hipkins Fund
+JF Fund of The Minneapolis Foundation
+The Michael H. Jordan and Kathryn H.
+Jordan Family Foundation
+Mary and Kennelly Foundation
+The Helen and Edward Lane Endowment Fund III
+Demarest Lloyd, Jr. Foundation
+Georges Lurcy Charitable and Educational Trust
+Marmot Foundation
+McCombs Foundation
+Joseph F. McCrindle Foundation
+The Minneapolis Foundation
+Neeb Family Foundation
+New Horizon Foundation-The Revelle Fund
+The Amy Klette Newman Foundation
+Nuveen Benevolent Trust
+Sylvan and Ann Oestreicher Foundation, Inc.
+Oliver Memorial Trust Foundation
+Bessie Pappas Charitable Foundation, Inc.
+The Andrew M. Paul Family Foundation
+PAV Foundation
+Ashton Phelps, Jr. Family Fund
+The Pincus Family Foundation
+Patricia G. and Robert A. Plitt
+Charitable Fund
+Herman T. and Phenie R. Pott Foundation
+Pringle Family Charitable Fund
+The Myra Stafford Pryor Charitable Trust
+Benjamin J. Rosenthal Foundation
+Charles & M. R. Shapiro Foundation, Inc.
+Silicon Valley Foundation
+Harold Simmons Foundation
+The Snowden Foundation
+Richard and Elizabeth R. Steele Fund
+The Charles J. Strosacker Foundation
+Supreme Council Benevolent Foundation
+Tecumseh Foundation
+Bill and Connie Timmons Family
+Charitable Fund
+Wenger Foundation
+Wickenden Gift Fund
+Woodward Fund
+The World Bank Community Connections Fund
+Legacy DonorS
+Estate of Vera Adams
+Frank L. Babbott, Jr., Trust
+Estate of Corine E. Beverly
+Nicholas and Lois Blatchford Trust
+Estate of Samuel H. Brown
+Henry Clay Bryant Trust
+Estate of Harold Campbell
+Estate of Charity B. Cantey
+Estate of John R. Carlson
+Estate of John Corby
+Lucile Fessenden Dandelet Trust
+Estate of Estelle A. DeLacy
+Estate of Eunice B. Demuth
+Estate of John Fitzgerald Due
+Estate of Ruth Ehrlich
+Estate of Yvonne Freeman
+Estate of Mary A. Gerlach
+Jean Gelardo Trust
+Elizabeth L. Grundy Trust
+Estate of Ethel F. Hall
+Estate of Vertus W. Hardiman
+W. Hugh and Gabrielle Mills Headlee Trust
+Doris B. Holerman Trust
+Estate of Pearl T. Holladay
+Includes support for sponsorships and
+Estate of Thelma E. Jack
+Estate of Karl L. Jackson
+Estate of Urbane Jackson
+Diana Jerome Trust
+Lorraine A. Joyce Trust
+Estate of Rowena Byer Lawrence
+Estate of Selma T. Lewis
+Estate of Susan L. Mitenbuler
+Estate of Angela Mittiga
+Estate of Avis Nicholson
+Estate of Cecilia S. O'Brien
+Daniel O. Omer Trust
+Goldie Otters Trust
+Estate of Edwina Payton
+Dr. and Mrs. Arthur William
+Phillips Trust
+Frank B. Pullara Trust
+Estate of Lavinia Reese
+Estate of Eugene Martin Ruderman
+Estate of Rudolph Saunders
+Estate of Emily Savarese
+Edward C. Schultz Trust
+Estate of Hans Schwerdtfeger
+Estate of Carol I. Seligman
+Estate of Lucille Shannon
+Estate of Robert W. Short
+Estate of Dorothy H. Simond
+Dorothy M. Simpson Trust
+Estate of Ivy M. Smith
+Estate of Barry S. and Nevada R. Stone
+Trust Under Will of Jessie H. Roby Stos
+Estate of John W. Thomas, M.D.
+Haskell and Janice Titchell Trust
+Estate of Harry Tsucalas
+Estate of James B. Tunny, Jr.
+Estate of Samson A. Ullmann
+Estate of Elma Jean Visser
+Estate of Myrtle A. Washington
+Estate of Lee S. Waterman
+Estate of Bernice Winslow
+Estate of David H. Wood
+Nathalie F.S. Woodbury Trust
+>>> Donation Amount: 100000
+AT&T
+Exxon Mobile Corporation
+HSBC - North America "United for Hope" Campaign
+JPMorgan Chase Foundation
+Wal-Mart Corporation
+>>> Donation Amount: 50000
+PepsiCo Foundation Matching Gift Campaign
+>>> Donation Amount: 25000
+American Express Employee Corporate Campaign
+IBM Employee Campaign
+>>> Donation Amount: 10000
+AT&T - United Way Giving Campaign
+Citi - St. Louis
+Edison International
+Educational Testing Services
+Microsoft Employee Giving Campaign
+PSE&G
+United Airlines
+Verizon Wireless
+ever more important."
+Includes in-kind contribution
+Includes support for sponsorships and
+>>> Donation Amount: 5000
+Abbott Laboratories Employee Giving Campaign
+Chevron Humankind
+Employees Community Fund of
+The Boeing Company
+Pfizer Matching Gift Campaign
+PG&E Corporation Foundation/ Campaign for the Community
+The Capital Group Companies Charitable Foundation
+The Clorox Company Foundation/ Employee Giving
+Wells Fargo Community Support Campaign
+>>> Donation Amount: 50000
+American Electric Power - Columbus, OH
+>>> Donation Amount: 25000
+Allstate Giving Campaign - Norfolk, VA
+Chicago Inter-Alumni Council -
+Chicago, IL
+Regions Bank - Birmingham, AL
+Washington Inter-Alumni Council -
+Washington, DC
+>>> Donation Amount: 10000
+AEP for UNCF - Columbus, OH
+Clark Atlanta University - Atlanta, GA
+Greater NY Inter-Alumni Council -
+New York, NY
+Jack and Jill of America -
+Washington, DC
+Los Angeles Bridge Unit
+Los Angeles Inter-Alumni Council -
+Long Beach, CA
+>>> Donation Amount: 5000
+Alpha Kappa Alpha - Alpha Mu Omega
+Chapter, Indianapolis, IN
+Alpha Kappa Alpha Sorority, Inc. -
+Indianapolis, IN
+California Governor's Office for Women
+and Families - Santa Monica, CA
+Citizens for Lisa Madigan - Chicago, IL
+Daughters of Charity Services New
+Orleans - Harvey, LA
+Democratic Party of Virginia -
+Richmond, VA
+Florence Public School District -
+Florence, SC
+The Holidays Incorporated - Davie, FL
+The Junior League of Hartford -
+Hartford, CT
+Las Vegas Metropolitan Inter-Alumni
+Council - Las Vegas, NV
+The Metropolitan Bridge Unit -
+Yonkers, NY
+National Football League Players
+Association - Washington, DC
+Philomathean Club -
+Santa Monica, CA
+Team OCLC - Dublin, OH
+Tougaloo College Pre-Alumni
+Council - Tougaloo, MS
+>>> Donation Amount: 25000
+AFSCME AFL-CIO -Washington, DC
+>>> Donation Amount: 10000
+The New Jersey Labor Advisory Board
+UNCF AFSCME Co - Trenton, NJ
+>>> Donation Amount: 250000
+Alfred Street Baptist Church -
+Alexandria, VA
+Brook Hollow Baptist Church -
+Houston, TX
+Brentwood Baptist Church -
+Houston, TX
+>>> Donation Amount: 10000
+Christ the King Church - Milwaukee, WI
+Enon Tabernacle -Germantown -
+Philadelphia, PA
+First Baptist Church West - Charlotte, NC
+Fort Belvoir Chapel, Department of the
+Army - Fort Belvoir, VA
+The Fountain of Praise - Houston, TX
+Macedonia Missionary Baptist Church -
+Maitland, FL
+Mount Zion Baptist Church -
+Arlington, VA
+Saint Paul Baptist Church - Charlotte, NC
+Silverlake Church - Pearland, TX
+University Park Baptist Church -
+Charlotte, NC
+Wheeler Avenue Baptist Church -
+Houston, TX
+Windsor Village United Methodist Church -
+Houston, TX
+Zion Baptist Church - Washington, DC
+>>> Donation Amount: 5000
+Antioch Missionary Baptist Church -
+Beaumont, TX
+Bethlehem Baptist Church -
+Alexandria, VA
+Bolling Air Force Base, Chaplain Corps -
+Washington, DC
+Cornerstone Baptist Church -
+Brooklyn, NY
+Eastern Star Church - Indianapolis, IN
+First Baptist Church, Denbigh - Newport
+News, VA
+First Baptist Church of Highland Park -
+Landover, MD
+First Institutional Baptist Church -
+Phoenix, AZ
+Fort Meade Chapel - Fort Meade, MD
+Friendship Missionary Baptist Church -
+Charlotte NC
+Lighthouse Church of God in Christ -
+Beaumont, TX
+Memorial Presbyterian Church -
+New York, NY
+Mount Olive Baptist Church -
+East Orange, NJ
+New Mount Olive Baptist Church -
+Fort Lauderdale, FL
+Saint Paul Baptist Church -
+Montclair, NJ
+Trinity Baptist Church - Bronx, NY
+Walker Memorial Baptist Church -
+New York, NY
+>>> Donation Amount: 100000
+Chicago Area Combined Federal Campaign
+Chicago Public School Employee Campaign
+City of Chicago Employee Campaign
+City of Philadelphia Combined Campaign
+Combined Federal Campaign -
+Global Impact-Overseas
+Combined Federal Campaign of
+Metropolitan Atlanta
+Combined Federal Campaign of North
+Central Texas
+Combined Federal Campaign of the
+National Capital Region
+Maryland Charity Campaign
+United Way of the National
+Capital Region
+United Way of SE Michigan
+>>> Donation Amount: 50000
+Atlanta Public Schools
+City of Cleveland Employees Campaign
+Cleveland Board of Education -
+Cleveland Municipal School District
+Combined Federal Campaign -
+Philadelphia Area
+Dekalb County Public Schools
+Dekalb School Employees Foundation
+Los Angeles Area Combined Federal Campaign
+Los Angeles City Treasury, DWP
+Los Angeles Unified School District
+New York City CFC
+Pennsylvania State Employees
+Combined Appeal (SECA) Campaign
+State of Georgia Charitable Campaign
+State of Michigan
+United Wayfor the Greater New
+OrleansArea
+United Way New York City Campaign
+Winston-Salem/Forsyth County Schools
+>>> Donation Amount: 25000
+Atlanta Housing Authority
+Combined Federal Campaign of Palm Beach County
+City of Los Angeles
+Combined Federal Campaign for the
+Greater New OrleansArea
+Combined Federal Campaign of the
+Texas Gulf Coast
+Cuyahoga Metropolitan Housing Authority
+Dallas Independent School District
+Forth Worth Independent School District
+Gateway Combined Federal Campaign
+Houston Independent School District
+Charitable Campaign
+MARTA
+North Carolina State Employees Combined Campaign
+Regional Transit Authority
+Southeastern Pennsylvania Transportation Authority
+State and University Employees
+Combined Appeal (SECA) - IL
+United Way Campaign - Capital Region
+United Way of Delaware County
+United Way of Greater Cleveland
+United Way of Metropolitan Chicago
+University of Minnesota
+>>> Donation Amount: 10000
+Akron Public Schools Employee Campaign
+American Airlines African American Employee Resource Group
+American Charities
+Argonne National Laboratory
+Board of Education of the City of
+Birmingham, AL
+Combined Federal Campaign of
+Central Alabama
+Chattanooga Area Combined Federal Campaign
+City of Birmingham
+Combined Charities Campaign
+of Illinois
+Combined Federal Campaign of
+Cleveland
+Combined Federal Campaign of
+King County
+Combined Federal Campaign of
+San Antonio
+Cuyahoga Community College
+Detroit Public Schools
+Environmental Federation of California
+Federated Campaign
+Fulton School Employees
+Hawaii Pacific Area Combined Federal Campaign
+Heartland Combined Federal Campaign
+Hennepin County
+Metropolitan Arts Partnership - Combined Federal Campaign
+Metropolitan Water Reclamation District
+of Greater Chicago
+Middle Georgia Area Combined Federal Campaign
+New Jersey StateEmployees Charitable Campaign
+New York Transit Authority
+Principal Combined Fund Organization
+- Combined Federal Campaign
+Oklahoma City
+State Employees Community Campaign
+The City of Houston Combined Municipal Campaign
+Truist
+United Way of Greater New Haven, CT
+United Way of Midland
+United Way of the Capital Region UNCF/
+UW Partnership
+United Way, Inc.
+University of Minnesota Disbursement Services
+>>> Donation Amount: 5000
+Capital Area United Way
+City of New Orleans
+City of Seattle
+City of St. Louis
+Clayton County Public Schools
+Combined Federal Campaign - Denver
+Combined Federal Campaign of
+Augusta, GA
+Combined Federal Campaign of
+Columbia, SC
+Combined Federal Campaign of Kitsap
+and Mason Counties
+Combined Federal Campaign of
+Nashville, TN
+Combined Federal Campaign of
+Northwest Louisiana
+Community Health Charities -
+MECCA - TN
+County of Santa Clara Warrant
+County of Wayne
+CSRA of Augusta, GA
+Cuyahoga Community College Employees Campaign
+Cuyahoga County
+Florence Public School District One
+Metropolitan Transportation Authority
+Network for Good
+Northern New Jersey Combined Federal Campaign
+Saint Paul Public Schools Independent
+School District 625
+Savannah-Chatham Public Schools
+Southeastern Michigan Combined
+Federal Campaign
+Southern New Jersey Combined
+Federal Campaign
+St. Louis Public Schools
+State of Washington
+Texas State Employee Charitable Campaign
+Tri-Community Combined Federal
+Campaign of Columbus, GA
+TridentCounty Campaign - Charleston
+United Way Lake Area Campaign
+United Way of Allegheny
+United Way of Central Alabama
+United Way of Central Indiana, Inc. - Combined Federal Campaign
+United Way of Lake County - Combined
+Federal Campaign
+United Way of San Diego County
+United Way of Tucson and Southern
+Arizona - Combined Federal Campaign
+United Way - City of Greater Kansas
+City, MO
+Valley of the Sun United Way
+Washington State Employee CFD
+>>> Donation Amount: 5000
+Mr. and Mrs. Hank Aaron
+James N. Alston
+John M. and Alix Ankele
+Vernon G. Baker, II
+Lindie Banks
+Francis and Shirley Bennett
+Allen and Joan Bildner
+Catherine Roberts Bridgeman
+Roger O. and Barbara Brown
+Susan Brown
+Willie L. Brown, Jr.
+Paul Burtness
+Velma Butler
+Margery Brittain
+Lucy Cade
+Mrs. Dorwin Cartwright
+Ann Carver and Sa-Ra
+Karen Champion
+Kenneth and Kathryn Chenault
+Catherine Cheung and Richard Rabin
+Thomas Claugus
+Edward A. Coburn
+Jean A. Coyne
+Clan Crawford
+John and Sarah Davenport
+Willma H. Davis
+Sarah C. Doering
+Derrell Dowdell
+Tammerlin Drummond
+Jean Due
+George W. and Lisa O. Etheridge, Jr.
+Richard Fain
+J.C. Flowers & Co.
+Gerald and Jane Garbacz
+Adam and Carol Geballe
+Raymond V. and Gladys H. Gilmartin
+Jackson and Irene Golden 1989
+Charitable Trust
+Timothy Greenfield-Sanders
+Jay Grinney
+John C. Hanson
+Charles Harvey
+James L. Heath
+Mary P. Hines
+Michelle J. Hooper
+Marjorie S. Isaac
+Raynald Holder
+Betty Wold Johnson
+Charlie and Betty Johnson
+Thomas and Elisabeth Jones
+James Jordan
+Wayne D. Jordan
+L. Daniel and Patricia M. Jordnt
+Sirretha Joy
+Willis Kelley
+Hannah Kellogg-Dowell
+John J. Kennelly
+Louise Kjellstrom
+Richard and Doreen Kopf
+Caleb Kramer
+Irene Daniell Kress
+Kenneth and Monica Kulander
+Vincent and Mary Ann Kyle
+Effie D. Lathrop
+Basil G. Lee
+Theodora R. Lee, Esq.
+Tom and Laura Leppert
+Mr. and Mrs. Charles Liebman
+Virginia G. Little
+Leah U. Lockhart
+Michael L. and Cheryl F. Lomax
+Mr. and Mrs. Joseph. R. Malloure
+Joseph and Shirley Mangin
+Frank J. Mason
+Julia Jones Matthews
+Jesse McCartney
+R. Sean and Robert McConlogue
+Mrs. Alan Melvile
+Maxine Morrison
+Elise S. Myer
+Tracy R. Nolan
+Eleanor M. Neumayer
+President and Mrs. Barack Obama
+Felix I. Oviasu, MD
+Bob J. Perry
+Malcolm Pirnie
+James D. Pitcock
+The Honorable and Mrs. Colin Powell
+Pringle Family Charitable Fund
+Harriet P. Richardson
+Mrs. Lora Robins
+Kenneth and Jean Robinson
+David Rockefeller
+Stephen A. Roell
+Dr. James. M. Rosin Memorial
+Scholarship Fund
+Mark and Louise Roznik
+David W. Russell
+Andrea and Kenneth Saffir
+Betty and Hardy Sanders
+Cynthia Amadon Schliemann
+Michael and Sara Schnitzer
+Diane Schulz
+William J. Shaw
+James D. Sinegal
+Patricia Sloan
+Sonata Charitable Lead Trust
+Jack Stahl
+Matthew E. Steinmetz
+John D. Summers
+Curtis H. Tearte
+Hank and Yvonne Thomas
+Stan and Dotty Thurston
+Cheryl J. Tyson
+Gerald and Ruth Vurek
+Dr. George Wallerstein
+Adrienne Kay Weekes
+Joan T. Wheeler
+Gennifer and Marvin White
+John Wesley White
+Dr. Thomas C. Wickenden
+Marilyn Williams
+Alan Wilson
+Rhonda Hill Wilson
+Lucy Winton
+Mildred J. Yearby
+The Honorable and Mrs. Andrew Young
+Floyd D. Young
+H.A. and Kristin Hussey Zisson

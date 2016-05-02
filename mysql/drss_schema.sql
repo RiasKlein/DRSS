@@ -1,5 +1,5 @@
 -- drop database drss;
-drop table Donations;
+-- drop table Donations;
 create database drss;
 use drss;
 create table Donations (
@@ -9,36 +9,3 @@ create table Donations (
 	year_given	int,
 	primary key (donor, amt_range, nonprofit, year_given)
 );
-
-select * from Donations d where donor like "%Jefferson%";
-delete from Donations where donor = "";
-delete from Donations where nonprofit = "UNCF" and amt_range = "0" and year_given ="2011" and donor = "liability for unrecognized tax benefits.";
-
-
-select distinct d.year_given from Donations d where d.nonprofit = "National Geographic" order by d.year_given asc;
-
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("a", "5 and up", "National Geographic", 1994);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("b", "5 and up", "AMERICAN NATIONAL RED CROSS", 1994);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("c", "5 and up", "UNITED NEGRO COLLEGE FUND", 1994);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("d", "5 and up", "SMITHSONIAN INSTITUTION OFFICE OF THE COMPTROLLER", 1994);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("e", "10 and up", "National Geographic", 1994);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("f", "10 and up", "National Geographic", 1994);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("g", "10 and up", "National Geographic", 1994);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("h", "10 and up", "National Geographic", 1994);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("i", "15 and up", "National Geographic", 1994);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("j", "15 and up", "National Geographic", 1994);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("k", "15 and up", "National Geographic", 1994);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("l", "15 and up", "National Geographic", 1994);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("a", "5 and up", "National Geographic", 2004);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("b", "5 and up", "National Geographic", 2004);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("c", "5 and up", "National Geographic", 2004);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("d", "5 and up", "National Geographic", 2004);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("e", "10 and up", "National Geographic", 2004);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("f", "10 and up", "National Geographic", 2004);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("g", "10 and up", "National Geographic", 2004);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("h", "10 and up", "National Geographic", 2004);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("i", "15 and up", "National Geographic", 2004);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("j", "15 and up", "National Geographic", 2004);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("k", "15 and up", "National Geographic", 2004);
-insert into Donations (donor, amt_range, nonprofit, year_given) values ("l", "15 and up", "National Geographic", 2004);
-

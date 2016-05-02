@@ -1,6 +1,6 @@
 # Donor Report Scraping System (DRSS)
 
-A system that provides a repeatable process for collecting and storing publicly available nonprofit gift data.
+A system that provides a repeatable, scalable process for collecting and storing publicly available nonprofit gift data.
 
 ### Development Status 
 
