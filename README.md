@@ -8,22 +8,18 @@ $ scrapy crawl (Name of spider, it's inside the .py at line name=)
 
 ### Development Status 
 
-* As of 4/15/2016, the 'Data Processing' component supports reports from:
-  - American National Red Cross (2015)
-  - National Geographic (2012 ~ 2015)
-  - National Fish & Wildlife Foundation (2014 ~ 2015)
-  - National Public Radio (2014 ~ 2015)
-  - Support for additiional non-profits is being developed
-* Preliminary tests on integration of subsystems are favorable (and functional)
+* As of 4/19/2016, 7 functional templates have been created for the Data Processing subsystem and the User Interface, Login, Data Processing, Query Processing, and Database have all been integrated into a single deliverable. 
+* The Web Scraper subsystem is currently in development and there are no foreseeable issues with its integration 
+* Documentation must be created for the template creation procedure to sustain continued system growth
 
 System Component | Status | Comment
 --- | --- | ---
-User Interface | In development |
-Login | In development |
-Web Scraper | Status Unknown | Not as useful as PDF sources
-Data Processing | In development | 1 template complete, 2 in development
-Query Processing | May NOT be developed | Redundant Functionality
-Database | In development | 
+User Interface | Complete | User Interface is demo-able
+Login | Complete | Login on the front end is demo-able
+Web Scraper | In developemt | Not as useful as PDF sources, but it is a required functionality 
+Data Processing | Complete | Functional templates created in 2 formats
+Query Processing | Complete | Integrated with the demo-able User Interface
+Database | Complete | Demo-able
 
 ### Standard Procedures
 * No pushing to master (applies most of the time)
