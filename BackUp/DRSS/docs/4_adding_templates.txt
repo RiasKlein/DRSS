@@ -1,0 +1,48 @@
+		ADDING NEW TEMPLATES
+To add a new template to the system, the following steps must be followed.
+
+1) Create a directory in ./nonprofits/ with the name of the
+nonprofit that you are adding a template for.
+	For example: If adding a template for the Red Cross,
+	create a directory named "Red Cross" (or "Red Cross Foundation",
+	or any variant that you prefer).
+
+What this does:
+	Now when a user visits "upload_pdfs/", the name of the folder you 
+	just added will be listed as an option for a non-profit to associate
+	the uploaded files with.
+
+2) Move your custom template into the directory you just created,
+and rename it to "template.py".
+	For example: Now your file would be 
+	./nonprofits/Red Cross/template.py
+- Note: that this one file should contain all necessary functions
+		and meet the following requirements.
+
+3) template.py's function for parsing must be called "readTemplate"
+- Note: thus no main() function is needed
+		as this function will be imported, not run as its own program.
+
+4) readTemplate() must take exactly two parameters:
+	- an absolute path to the filename that will be parsed and read in
+	(for example, ./nonprofits/NatGeo/uploaded_pdf1.txt)
+	- an absolute path to the filename that the results will be written out to
+	(for example, ./nonprofits/NatGeo/out_uploaded_pdf1.txt)
+		- the path the file is written out to be must be the name of the
+		file that was read in, preceded by the string "out_"
+- This is for concurrency reasons, as having a single "out.txt" output file
+means that multiple users cannot simultaneously upload pdfs for the same 
+nonprofit, as their requests would be overwriting one another's "out.txt".
+
+5) The parsed output file must meet the following requirements:
+	Each line containing a donation amount (or range) must use the format
+		>>> Donation Amount: ###
+	where ">>> Donation Amount: " is a literal string, and ### is whatever amount
+	value is being used for that entry.
+
+	Each line containing a donor name must contain only the donor name itself, for example:
+		McDonald's Corporation
+		Walmart Foundation
+		Wawa
+
+And that's it!
