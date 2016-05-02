@@ -22,10 +22,10 @@ def mergeLines ( line, next_line ):
 # readTemplate3
 #	Function locates donors based on starting location in report
 #	Results are written to an output file
-def readTemplate ( rfile_path , wfile_path):
+def readTemplate( rfilename, wfilename ):
 	# Create an output file to place relevant information
-	rfile = open(rfile_path, "r")
-	wfile = open (wfile_path, 'w')
+	rfile = open ( rfilename, 'r')
+	wfile = open ( wfilename, 'w')
 
 	# ignore_list contains keywords for unwanted lines 
 	ignore_list = ["As of", "", "FISCAL", "Fiscal", "SUPPORTERS"]

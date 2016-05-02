@@ -102,16 +102,19 @@ def upload_pdfs():
 	# if POST form submitted, saves each uploaded file ina ppropriate directory
 	if request.method == 'POST':
 		# if no nonprofit specified, reprompt user
-		if request.form.get('nonprofit', None) is None:
+		if request.form.get('nonprofit_choice', None) is None:
 			nonprofits = os.walk(nonprofits_dir).next()[1]
 			return render_template("upload.html", error="Please select a nonprofit for your pdfs to be associated with.", nonprofits=nonprofits, logged_in = session['username'])
 		uploaded_files = request.files.getlist("file[]")
+		print uploaded_files
 		variable_directory = os.path.join(nonprofits_dir, request.form["nonprofit_choice"])
 		target_files = []
 		for file in uploaded_files:
-			if file and '.' in file and filename.rsplit('.', 1)[1] in ALLOWED_EXTENSIONS:
+			print file
+			if file and '.' in file.filename and file.filename.rsplit('.', 1)[1] in ALLOWED_EXTENSIONS:
 				filename = secure_filename(file.filename)
 				target_filename = os.path.join(variable_directory, filename)
+				print target_filename
 				file.save(target_filename)
 				target_files.append(target_filename)
 

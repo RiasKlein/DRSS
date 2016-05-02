@@ -40,16 +40,16 @@ def mergeLines ( line, next_line ):
 # readTemplate0 
 #	Function locates donors based on identifiers: '$' and 'AND ABOVE'
 #	Donors are currently written to an output file.
-def readTemplate ( rfile_path , wfile_path):
+def readTemplate( rfilename, wfilename):
 	# Create an output file to place relevant information
-	rfile = open(rfile_path, "r")
-	wfile = open (wfile_path, 'w')
+	rfile = open( rfilename, 'r')
+	wfile = open ( wfilename, 'w')
 
 	# ignore_list contains keywords for unwanted lines in 2012 ~ 2015 national geographic annual reports
 	ignore_list = ['"', "CLICK", "SUPPORT EXPLORATION", "NATIONAL GEOGRAPHIC", "National Geographic", "ACKNOWLEDGMENT OF GIFTS", "would be like had it", "to many people and made", "NORMA SHAW", "ANNUAL REPORT", "", "Anonymous", "organization creates a", "images and narratives", "cultures, their arts,", "THE POWER OF PHILANTHROPY", "can spark conversations", "important issues we face", "better care of each other", "Member", "our planet and all", "for our grandchildren", "world through scientific", "Together we are making", "and journalists. We", "of the generous individuals,", "and agencies shown here", "received between", "helped us inspire", "January 1 and December", "IN-KIND GIFTS"]
 
 	# merge_list contains keywords for entries that should be combined with the previous line
-	merge_list = ["Family\n", "Trust\n", "Trust*\n", "Management\n", "Company\n", "Expeditions\n", "Network\n", "Foundation\n", "Foundation, Inc.\n", "LLC\n", "Fund, Inc.\n", "Family Foundation\n", "Fund\n"]
+	merge_list = ["Limited\n", "D'Ambra\n", "Padilla\n", "Lead Annuity Trust*\n", "Family\n", "Trust\n", "Trust*\n", "Management\n", "Company\n", "Expeditions\n", "Network\n", "Foundation\n", "Foundation, Inc.\n", "LLC\n", "Fund, Inc.\n", "Family Foundation\n", "Fund\n"]
 
 	while True:
 		line = rfile.readline()		# read a line from the donor report

@@ -69,5 +69,5 @@ for given_pdf in target_files:
 	insert_into_db(write_file, sys.argv[ARG_FOLDER], year_given)
 
 	# clean up filename.pdf, filename.txt, out_filename.txt
-	subprocess.Popen(["rm", given_pdf, read_file, write_file])
+	# subprocess.Popen(["rm", given_pdf, read_file, write_file])
 	
