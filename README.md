@@ -2,6 +2,12 @@
 
 A system that provides a repeatable process for collecting and storing publicly available nonprofit gift data.
 
+### Team Members
+* Joseph Bieselin
+* Errol Elbasan
+* Robert Ryszewski
+* Shunman (Shun) Tse	
+
 ### Development Status 
 
 * As of 5/1/2016, the system is considered complete. 
